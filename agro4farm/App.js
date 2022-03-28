@@ -1,12 +1,17 @@
+import 'react-native-gesture-handler';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
-function HomeScreen({navigation}) {
+const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
+
+function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
-      <Button 
+      <Button
         title='Go to details'
         onPress={() => {
           navigation.navigate('Details')
@@ -24,15 +29,13 @@ function DetailsScreen() {
   );
 }
 
-const Stack = createNativeStackNavigator();
-
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" options={{ title: 'Overview' }} component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
-      </Stack.Navigator>
+      <Drawer.Navigator initialRouteName='Home'>
+        <Drawer.Screen name='Home' component={HomeScreen} />
+        <Drawer.Screen name='Details' component={DetailsScreen} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }
