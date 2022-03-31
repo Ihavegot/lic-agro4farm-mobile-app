@@ -9,6 +9,12 @@
 
 #
 
+## Functionalities
+
+- [Weather forecast - Openweather API](https://openweathermap.org)
+
+#
+
 ## Project setup
  
 In project folder, run command to install all dependencies:
