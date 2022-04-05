@@ -69,8 +69,7 @@ const styles = StyleSheet.create({
         width: '50%',
         backgroundColor: 'lightgray',
         borderRadius: 50,
-        color: 'orange',
-        placeholderTextColor: 'orange'
+        color: 'orange'
     },
     weatherDataLocation: {
         marginTop: 5,

@@ -12,6 +12,7 @@
 ## Functionalities
 
 - [Weather forecast - Openweather API](https://openweathermap.org)
+- [Expo location](https://docs.expo.dev/versions/latest/sdk/location/)
 
 #
 
