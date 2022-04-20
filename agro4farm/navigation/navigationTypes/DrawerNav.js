@@ -2,7 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer"
 import { Avatar, Drawer, DrawerItem, IndexPath, Layout, Text } from '@ui-kitten/components'
 import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { HomeIcon, InfoIcon } from '../../assets/icons'
+import { HomeIcon, InfoIcon, NotesIcon } from '../../assets/icons'
 import { TestScreen } from '../../screens/TestScreen'
 import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
 import { BottomTabsNav } from './BottomTabsNav'
@@ -38,7 +38,7 @@ function DrawerContent({ navigation, state }) {
                 <DrawerItem title='Pogoda' accessoryLeft={InfoIcon} />
                 <DrawerItem title='Kalkulator wysiewu' accessoryLeft={InfoIcon} />
                 <DrawerItem title='Środki ochrony roślin' accessoryLeft={InfoIcon} />
-                <DrawerItem title='Notatki' accessoryLeft={InfoIcon} />
+                <DrawerItem title='Notatki' accessoryLeft={NotesIcon} />
                 <DrawerItem title='Przewidywanie terminów pracy' accessoryLeft={InfoIcon} />
             </Drawer>
         </SafeAreaProvider>
@@ -48,11 +48,11 @@ function DrawerContent({ navigation, state }) {
 export function DrawerNav() {
     return (
         <Navigator screenOptions={{ headerShown: false }} drawerContent={props => <DrawerContent {...props} />}>
-            <Screen name="MainScreen" component={BottomTabsNav} />
+            <Screen name="MainScreen" component={TestScreen} />
             <Screen name="WeatherScreen" component={WeatherLocationScreen} />
             <Screen name="CalcScreen" component={TestScreen} />
             <Screen name="FetrScreen" component={TestScreen} />
-            <Screen name="NotesScreen" component={TestScreen} />
+            <Screen name="NotesScreen" component={BottomTabsNav} />
             <Screen name="WorecastScreen" component={TestScreen} />
         </Navigator>
     )

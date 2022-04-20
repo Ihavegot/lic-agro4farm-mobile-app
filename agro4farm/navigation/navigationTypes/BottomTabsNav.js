@@ -2,9 +2,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { BottomNavigation, BottomNavigationTab, Divider } from '@ui-kitten/components'
 import React from 'react'
 import { View } from 'react-native'
-import { HomeIcon, VideoIcon } from '../../assets/icons'
+import { ListIcon, AddIcon } from '../../assets/icons'
 import { BTTestA } from '../../screens/BTTestA'
 import { BTTestB } from '../../screens/BTTestB'
+import { NotesScreen } from '../../screens/Notes/NotesScreen'
+import { CreateNoteScreen } from '../../screens/Notes/CreateNoteScreen'
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
@@ -16,8 +18,8 @@ function BottomBar({ navigation, state }) {
                 appearance='noIndicator'
                 selectedIndex={state.index}
                 onSelect={index => navigation.navigate(state.routeNames[index])}>
-                <BottomNavigationTab title='A' icon={HomeIcon} />
-                <BottomNavigationTab title='B' icon={VideoIcon} />
+                <BottomNavigationTab title='Lista notatek' icon={ListIcon} />
+                <BottomNavigationTab title='Dodaj notatkę' icon={AddIcon} />
             </BottomNavigation>
         </View>
     )
@@ -26,8 +28,8 @@ function BottomBar({ navigation, state }) {
 export function BottomTabsNav() {
     return (
         <Navigator screenOptions={{ headerShown: false }} tabBar={props => <BottomBar {...props} />}>
-            <Screen name='A' component={BTTestA} />
-            <Screen name='B' component={BTTestB} />
+            <Screen name='List' component={NotesScreen} />
+            <Screen name='Create' component={CreateNoteScreen} />
         </Navigator>
     )
 }
