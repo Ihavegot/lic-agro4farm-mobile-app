@@ -1,21 +1,18 @@
-import { createDrawerNavigator } from '@react-navigation/drawer'
-import { NavigationContainer } from '@react-navigation/native'
-import 'react-native-gesture-handler'
+import * as eva from '@eva-design/eva'
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components'
+import { EvaIconsPack } from '@ui-kitten/eva-icons'
+import React from 'react'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { ApplicationNav } from './navigation/ApplicationNav'
 
-import { HomeScreen } from './screens/MainScreen'
-import { WeatherScreen } from './screens/WeatherScreen'
-import { LocationScreen } from './screens/LocationScreen'
-import { WeatherLocationScreen } from './screens/WeatherLocationScreen'
-
-const Drawer = createDrawerNavigator();
 
 export default function App() {
-
   return (
-    <NavigationContainer>
-      <Drawer.Navigator screenOptions={{headerShown: false}} initialRouteName='Home'>
-        <Drawer.Screen name='Home' component={WeatherLocationScreen} />
-      </Drawer.Navigator>
-    </NavigationContainer>
-  );
+    <ApplicationProvider {...eva} theme={{ ...eva.dark }}>
+      <IconRegistry icons={EvaIconsPack} />
+      <SafeAreaProvider>
+        <ApplicationNav />
+      </SafeAreaProvider>
+    </ApplicationProvider>
+  )
 }

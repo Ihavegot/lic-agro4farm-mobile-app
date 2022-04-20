@@ -1,6 +1,6 @@
+import * as Location from 'expo-location'
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import * as Location from 'expo-location'
 
 export function WeatherLocationScreen() {
 
@@ -67,7 +67,6 @@ export function WeatherLocationScreen() {
 const style = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'pink',
         alignItems: 'center',
         justifyContent: 'center'
     }
