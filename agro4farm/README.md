@@ -13,6 +13,8 @@
 
 - [Weather forecast - Openweather API](https://openweathermap.org)
 - [Expo location](https://docs.expo.dev/versions/latest/sdk/location/)
+- [Navigation](https://reactnavigation.org)
+- [UI Kitten](https://akveo.github.io/react-native-ui-kitten/)
 
 #
 
@@ -40,4 +42,9 @@ rm -r /node_modules
 Then reinstall dependencies using:
 ```
 npm install
+```
+
+Restart the development server and instruct the bundlers to clear their caches
+```
+expo start --clear
 ```
