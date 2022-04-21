@@ -6,16 +6,18 @@ import { Dimensions, KeyboardAvoidingView, StyleSheet, TextInput, Platform, Stat
 
 export function CreateNoteScreen() {
     const [note, setNote] = useState("")
+    const navigation = useNavigation()
 
     const saveNote = async () => {
         const value = await AsyncStorageLib.getItem("NOTES")
         const n = value ? JSON.parse(value) : []
         n.push(note)
-        await AsyncStorageLib.setItem("NOTES", JSON.stringify(n)).then(() => navigation.navigate("AllNotes"))
+        await AsyncStorageLib.setItem("NOTES", JSON.stringify(n)).then(() => navigation.navigate("List"))
         setNote("")
     }
+    //TODO: REMODEL TEXTAREA AND FIX BUTTON HIDING !!!
     return (
-        <Layout style={{ flex: 1, paddingTop: Platform.OS === "android" ? StatusBar.currentHeight: 0 }}>
+        <Layout style={styles.container}>
             <TextInput
                 value={note}
                 onChangeText={setNote}
@@ -35,17 +37,14 @@ export function CreateNoteScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#222B45",
 		color: "white",
 		padding: 30,
-		paddingTop: 80,
-
-		width: Dimensions.get("window").width
+		paddingTop: Platform.OS === "android" ? StatusBar.currentHeight: 0,
 	},
 	bottom: {
 		flex: 1,
 		justifyContent: "flex-end",
-		marginBottom: 36
+		marginBottom: 34,
 	},
 	button: {
 		marginBottom: 30

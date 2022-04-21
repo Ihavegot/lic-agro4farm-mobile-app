@@ -2,7 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer"
 import { Avatar, Drawer, DrawerItem, IndexPath, Layout, Text } from '@ui-kitten/components'
 import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { HomeIcon, InfoIcon, NotesIcon } from '../../assets/icons'
+import { DBIcon, HomeIcon, InfoIcon, KalcIcon, NotesIcon, SunIcon, WorkIcon } from '../../assets/icons'
 import { TestScreen } from '../../screens/TestScreen'
 import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
 import { BottomTabsNav } from './BottomTabsNav'
@@ -35,11 +35,12 @@ function DrawerContent({ navigation, state }) {
                 onSelect={index => navigation.navigate(state.routeNames[index.row])}
             >
                 <DrawerItem title='Strona główna' accessoryLeft={HomeIcon} />
-                <DrawerItem title='Pogoda' accessoryLeft={InfoIcon} />
-                <DrawerItem title='Kalkulator wysiewu' accessoryLeft={InfoIcon} />
-                <DrawerItem title='Środki ochrony roślin' accessoryLeft={InfoIcon} />
+                <DrawerItem title='Pogoda' accessoryLeft={SunIcon} />
+                <DrawerItem title='Kalkulator wysiewu' accessoryLeft={KalcIcon} />
+                <DrawerItem title='Środki ochrony roślin' accessoryLeft={DBIcon} />
                 <DrawerItem title='Notatki' accessoryLeft={NotesIcon} />
-                <DrawerItem title='Przewidywanie terminów pracy' accessoryLeft={InfoIcon} />
+                <DrawerItem title='Przewidywanie terminów pracy' accessoryLeft={WorkIcon} />
+                <DrawerItem title='O aplikacji' accessoryLeft={InfoIcon} />
             </Drawer>
         </SafeAreaProvider>
     )
@@ -54,6 +55,7 @@ export function DrawerNav() {
             <Screen name="FetrScreen" component={TestScreen} />
             <Screen name="NotesScreen" component={BottomTabsNav} />
             <Screen name="WorecastScreen" component={TestScreen} />
+            <Screen name="AboutScreen" component={TestScreen} />
         </Navigator>
     )
 }

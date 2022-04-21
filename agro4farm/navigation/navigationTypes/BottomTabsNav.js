@@ -7,6 +7,7 @@ import { BTTestA } from '../../screens/BTTestA'
 import { BTTestB } from '../../screens/BTTestB'
 import { NotesScreen } from '../../screens/Notes/NotesScreen'
 import { CreateNoteScreen } from '../../screens/Notes/CreateNoteScreen'
+import { DetailsNoteScreen } from '../../screens/Notes/DetailsNoteScreen'
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
@@ -30,6 +31,7 @@ export function BottomTabsNav() {
         <Navigator screenOptions={{ headerShown: false }} tabBar={props => <BottomBar {...props} />}>
             <Screen name='List' component={NotesScreen} />
             <Screen name='Create' component={CreateNoteScreen} />
+            <Screen name='Detail' component={DetailsNoteScreen} />
         </Navigator>
     )
 }
