@@ -48,6 +48,26 @@ export function WeatherLocationScreen() {
         }
     }
 
+    const checkClouds = (w) => {
+        if((w.weather[0].main).toLowerCase() == 'clouds'){
+            if(w.clouds.all > 80){
+                return dictionary[(w.weather[0].main).toLowerCase()]
+            }
+            return dictionary['fewClouds']
+        }
+        return false
+    }
+
+    const dictionary = {}
+    dictionary['clear'] = <Image source={require('../assets/weatherIcons/png/clear.png')} style={{ width: 256, height: 256 }} />
+    dictionary['clouds'] = <Image source={require('../assets/weatherIcons/png/clouds.png')} style={{ width: 256, height: 256 }} />
+    dictionary['drizzle'] = <Image source={require('../assets/weatherIcons/png/drizzle.png')} style={{ width: 256, height: 256 }} />
+    dictionary['rain'] = <Image source={require('../assets/weatherIcons/png/rain.png')} style={{ width: 256, height: 256 }} />
+    dictionary['thunderstorm'] = <Image source={require('../assets/weatherIcons/png/thunderstorm.png')} style={{ width: 256, height: 256 }} />
+    dictionary['snow'] = <Image source={require('../assets/weatherIcons/png/snow.png')} style={{ width: 256, height: 256 }} />
+    dictionary['mist'] = <Image source={require('../assets/weatherIcons/png/mist.png')} style={{ width: 256, height: 256 }} />
+    dictionary['fewClouds'] = <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 256, height: 256 }} />
+
     const theme = useTheme()
     const style = StyleSheet.create({
         container: {
@@ -128,49 +148,26 @@ export function WeatherLocationScreen() {
     })
 
     if (weather) {
-        const {
-            main: {
-                temp,
-                pressure,
-                humidity,
-                sunset,
-                sunrise
-            }
-        } = weather
-
-        const {
-            name
-        } = weather
-
-
-        // TODO: FIX THIS!!!
-        const dictionary = {}
-        dictionary['clear'] = '01d.png'//
-        dictionary['clouds'] = '03d.png'//
-        dictionary['drizzle'] = '09d.png'//
-        dictionary['rain'] = '10d.png'//
-        dictionary['thunderstorm'] = '11d.png'//
-        dictionary['snow'] = '13d.png'//
-        dictionary['mist'] = '50d.png'//
-
-        // const wthIcon = (weather.weather[0].main).toLowerCase()
-        // <Image source={require('../assets/weatherIcons/png/clear.png')} style = {{ width: 256, height: 256 }} />
+        const { main: { temp } } = weather
+        const { name } = weather
 
         return (
             <Layout style={style.container}>
                 <View style={style.weatherContainer}>
                     <View style={{ flex: 3, flexDirection: 'row' }}>
                         <View style={style.icon}>
-                            <Image source={require('../assets/weatherIcons/png/rain.png')} style={{ width: 256, height: 256 }} />
+                            {
+                                checkClouds(weather) ? checkClouds(weather) : dictionary[(weather.weather[0].main).toLowerCase()]
+                            }
                         </View>
                         <View style={style.temperature}>
-                            <FontAwesomeIcon size={21} style={{color: theme['color-primary-500']}} icon={faTemperatureEmpty} />
+                            <FontAwesomeIcon size={21} style={{ color: theme['color-primary-500'] }} icon={faTemperatureEmpty} />
                             <Text category='h1' style={style.text}>&nbsp;{Math.round(temp)}°C</Text>
                         </View>
                     </View>
 
                     <View style={style.location}>
-                        <FontAwesomeIcon style={{color: theme['color-primary-500']}} icon={faLocationDot} />
+                        <FontAwesomeIcon style={{ color: theme['color-primary-500'] }} icon={faLocationDot} />
                         <Text category='h4' style={style.text}>&nbsp;{name}</Text>
                     </View>
 
