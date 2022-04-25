@@ -3,6 +3,8 @@ import { Avatar, Drawer, DrawerItem, IndexPath, Layout, Text } from '@ui-kitten/
 import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { DBIcon, HomeIcon, InfoIcon, KalcIcon, NotesIcon, SunIcon, WorkIcon } from '../../assets/icons'
+import { AboutScreen } from "../../screens/AboutScreen"
+import { CalculatorScreen } from "../../screens/CalculatorScreen"
 import { TestScreen } from '../../screens/TestScreen'
 import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
 import { BottomTabsNav } from './BottomTabsNav'
@@ -49,13 +51,13 @@ function DrawerContent({ navigation, state }) {
 export function DrawerNav() {
     return (
         <Navigator screenOptions={{ headerShown: false }} drawerContent={props => <DrawerContent {...props} />}>
-            <Screen name="MainScreen" component={TestScreen} />
+            <Screen name="MainScreen" component={WeatherLocationScreen} />
             <Screen name="WeatherScreen" component={WeatherLocationScreen} />
-            <Screen name="CalcScreen" component={TestScreen} />
+            <Screen name="CalcScreen" component={CalculatorScreen} />
             <Screen name="FetrScreen" component={TestScreen} />
             <Screen name="NotesScreen" component={BottomTabsNav} />
             <Screen name="WorecastScreen" component={TestScreen} />
-            <Screen name="AboutScreen" component={TestScreen} />
+            <Screen name="AboutScreen" component={AboutScreen} />
         </Navigator>
     )
 }

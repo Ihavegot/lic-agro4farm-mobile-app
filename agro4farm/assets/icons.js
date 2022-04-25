@@ -10,3 +10,5 @@ export const SunIcon = (style) => <Icon {...style} name="sun-outline" />
 export const KalcIcon = (style) => <Icon {...style} name="keypad-outline" />
 export const DBIcon = (style) => <Icon {...style} name="layers-outline" />
 export const WorkIcon = (style) => <Icon {...style} name="bulb-outline" />
+export const LocationIcon = (style) => <Icon {...style} name="pin-outline" />
+export const TempIcon = (style) => <Icon {...style} name="thermometer-outline" />

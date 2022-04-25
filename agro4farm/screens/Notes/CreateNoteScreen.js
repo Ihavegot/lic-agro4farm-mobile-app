@@ -21,7 +21,7 @@ export function CreateNoteScreen() {
             <TextInput
                 value={note}
                 onChangeText={setNote}
-                style={{ color: "#fff", fontSize: 22, backgroundColor: '#ffeedd' }}
+                style={{ flex: 1, justifyContent: 'center', alignItems: 'center', fontSize: 22}}
                 multiline={true}
                 autoFocus
                 selectionColor="#fff"
