@@ -4,13 +4,12 @@ import React, { useEffect, useState } from 'react'
 import { StyleSheet, View, StatusBar, Platform, Image } from 'react-native'
 import { TempIcon } from '../assets/icons'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faLocationDot, faTemperatureEmpty } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faTemperatureEmpty, faGaugeHigh, faArrowTurnUp, faArrowTurnDown } from '@fortawesome/free-solid-svg-icons'
 
 export function WeatherLocationScreen() {
 
     const [weather, setWeather] = useState(null)
     const [errorMsg, setErrorMsg] = useState(null)
-    const [test, setTest] = useState('0')
 
     const api = {
         link: "https://api.openweathermap.org/data/2.5/weather?",
@@ -49,8 +48,8 @@ export function WeatherLocationScreen() {
     }
 
     const checkClouds = (w) => {
-        if((w.weather[0].main).toLowerCase() == 'clouds'){
-            if(w.clouds.all > 80){
+        if ((w.weather[0].main).toLowerCase() == 'clouds') {
+            if (w.clouds.all > 80) {
                 return dictionary[(w.weather[0].main).toLowerCase()]
             }
             return dictionary['fewClouds']
@@ -58,33 +57,37 @@ export function WeatherLocationScreen() {
         return false
     }
 
+    const convertUTC = (utc) => {
+        const date = new Date(utc * 1000)
+        return date.toLocaleTimeString()
+    }
+
     const dictionary = {}
-    dictionary['clear'] = <Image source={require('../assets/weatherIcons/png/clear.png')} style={{ width: 256, height: 256 }} />
-    dictionary['clouds'] = <Image source={require('../assets/weatherIcons/png/clouds.png')} style={{ width: 256, height: 256 }} />
-    dictionary['drizzle'] = <Image source={require('../assets/weatherIcons/png/drizzle.png')} style={{ width: 256, height: 256 }} />
-    dictionary['rain'] = <Image source={require('../assets/weatherIcons/png/rain.png')} style={{ width: 256, height: 256 }} />
-    dictionary['thunderstorm'] = <Image source={require('../assets/weatherIcons/png/thunderstorm.png')} style={{ width: 256, height: 256 }} />
-    dictionary['snow'] = <Image source={require('../assets/weatherIcons/png/snow.png')} style={{ width: 256, height: 256 }} />
-    dictionary['mist'] = <Image source={require('../assets/weatherIcons/png/mist.png')} style={{ width: 256, height: 256 }} />
-    dictionary['fewClouds'] = <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 256, height: 256 }} />
+    dictionary['clear'] = <Image source={require('../assets/weatherIcons/png/clear.png')} style={{ width: 190, height: 190 }} />
+    dictionary['clouds'] = <Image source={require('../assets/weatherIcons/png/clouds.png')} style={{ width: 190, height: 190 }} />
+    dictionary['drizzle'] = <Image source={require('../assets/weatherIcons/png/drizzle.png')} style={{ width: 190, height: 190 }} />
+    dictionary['rain'] = <Image source={require('../assets/weatherIcons/png/rain.png')} style={{ width: 190, height: 190 }} />
+    dictionary['thunderstorm'] = <Image source={require('../assets/weatherIcons/png/thunderstorm.png')} style={{ width: 190, height: 190 }} />
+    dictionary['snow'] = <Image source={require('../assets/weatherIcons/png/snow.png')} style={{ width: 190, height: 190 }} />
+    dictionary['mist'] = <Image source={require('../assets/weatherIcons/png/mist.png')} style={{ width: 190, height: 190 }} />
+    dictionary['fewClouds'] = <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 190, height: 190 }} />
 
     const theme = useTheme()
     const style = StyleSheet.create({
         container: {
             flex: 1,
             flexDirection: 'column',
-            padding: 30,
-            paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+            padding: 20,
         },
 
         weatherContainer: {
-            flex: 3,
+            flex: 4,
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'stretch',
             backgroundColor: theme['background-basic-color-2'],
             borderRadius: 25,
-            marginTop: 25,
+            marginTop: 5,
             marginBottom: 25,
             paddingHorizontal: 20,
             paddingVertical: 5,
@@ -96,7 +99,6 @@ export function WeatherLocationScreen() {
             backgroundColor: theme['background-basic-color-2'],
             borderRadius: 25,
             marginBottom: 25,
-            padding: 10,
         },
         dayContainer: {
             flex: 2,
@@ -117,7 +119,9 @@ export function WeatherLocationScreen() {
             flex: 1,
             flexDirection: 'row',
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'flex-end',
+            paddingVertical: 10,
+            paddingHorizontal: 5,
         },
 
         location: {
@@ -144,12 +148,19 @@ export function WeatherLocationScreen() {
             fontWeight: 'bold',
             fontFamily: 'Roboto',
         },
+        textPressure: {
+            color: theme['color-primary-500'],
+            fontWeight: 'bold',
+            fontFamily: 'Roboto',
+        }
 
     })
 
     if (weather) {
-        const { main: { temp } } = weather
+        const { main: { temp, pressure } } = weather
         const { name } = weather
+        const sunriseTime = convertUTC(weather.sys.sunrise)
+        const sunsetTime = convertUTC(weather.sys.sunset)
 
         return (
             <Layout style={style.container}>
@@ -158,17 +169,24 @@ export function WeatherLocationScreen() {
                         <View style={style.icon}>
                             {
                                 checkClouds(weather) ? checkClouds(weather) : dictionary[(weather.weather[0].main).toLowerCase()]
+                                // <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 190, height: 190 }} />
                             }
                         </View>
-                        <View style={style.temperature}>
-                            <FontAwesomeIcon size={21} style={{ color: theme['color-primary-500'] }} icon={faTemperatureEmpty} />
-                            <Text category='h1' style={style.text}>&nbsp;{Math.round(temp)}°C</Text>
+                        <View style={{ flex: 1, flexDirection: 'column' }}>
+                            <View style={style.temperature}>
+                                <FontAwesomeIcon size={21} style={{ color: theme['color-primary-500'], marginBottom: 10 }} icon={faTemperatureEmpty} />
+                                <Text category='h1' style={style.text}> {Math.round(temp)}°C</Text>
+                            </View>
+                            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingVertical: 10, paddingHorizontal: 5 }}>
+                                <FontAwesomeIcon size={19} style={{ color: theme['color-primary-500'] }} icon={faGaugeHigh} />
+                                <Text category='h5' style={style.textPressure}> {pressure} hPa</Text>
+                            </View>
                         </View>
                     </View>
 
                     <View style={style.location}>
                         <FontAwesomeIcon style={{ color: theme['color-primary-500'] }} icon={faLocationDot} />
-                        <Text category='h4' style={style.text}>&nbsp;{name}</Text>
+                        <Text category='h4' style={style.text}> {name}</Text>
                     </View>
 
                 </View>
@@ -177,10 +195,14 @@ export function WeatherLocationScreen() {
                 </View>
                 <View style={style.dayContainer}>
                     <View style={style.sunrise}>
-                        <Text style={style.text}>{weather.sys.sunrise}</Text>
+                        <Image source={require('../assets/weatherIcons/png/sunrise.png')} style={{ width: 128, height: 128 }} />
+                        <Text category='p1' style={style.text}>Wschód słońca</Text>
+                        <Text category='h6' style={style.text}>{sunriseTime}</Text>
                     </View>
                     <View style={style.sunset}>
-                        <Text style={style.text}>{weather.sys.sunset}</Text>
+                        <Image source={require('../assets/weatherIcons/png/sunset.png')} style={{ width: 128, height: 128 }} />
+                        <Text category='p1' style={style.text}>Zachód słońca</Text>
+                        <Text category='h6' style={style.text}>{sunsetTime}</Text>
                     </View>
                 </View>
             </Layout>
@@ -197,3 +219,5 @@ export function WeatherLocationScreen() {
     }
 
 }
+
+//#F78E2D

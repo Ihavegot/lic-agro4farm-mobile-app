@@ -1,5 +1,5 @@
 import { createDrawerNavigator } from "@react-navigation/drawer"
-import { Avatar, Drawer, DrawerItem, IndexPath, Layout, Text } from '@ui-kitten/components'
+import { Avatar, Drawer, DrawerItem, IndexPath, Layout, Text, useTheme } from '@ui-kitten/components'
 import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { DBIcon, HomeIcon, InfoIcon, KalcIcon, NotesIcon, SunIcon, WorkIcon } from '../../assets/icons'
@@ -49,15 +49,16 @@ function DrawerContent({ navigation, state }) {
 }
 
 export function DrawerNav() {
+    const theme = useTheme()
     return (
-        <Navigator screenOptions={{ headerShown: false }} drawerContent={props => <DrawerContent {...props} />}>
-            <Screen name="MainScreen" component={WeatherLocationScreen} />
-            <Screen name="WeatherScreen" component={WeatherLocationScreen} />
-            <Screen name="CalcScreen" component={CalculatorScreen} />
-            <Screen name="FetrScreen" component={TestScreen} />
-            <Screen name="NotesScreen" component={BottomTabsNav} />
-            <Screen name="WorecastScreen" component={TestScreen} />
-            <Screen name="AboutScreen" component={AboutScreen} />
+        <Navigator drawerContent={props => <DrawerContent {...props} />}>
+            <Screen name="MainScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={WeatherLocationScreen} />
+            <Screen name="WeatherScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={WeatherLocationScreen} />
+            <Screen name="CalcScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={CalculatorScreen} />
+            <Screen name="FetrScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={TestScreen} />
+            <Screen name="NotesScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={BottomTabsNav} />
+            <Screen name="WorecastScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={TestScreen} />
+            <Screen name="AboutScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={AboutScreen} />
         </Navigator>
     )
 }
