@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { BottomNavigation, BottomNavigationTab, Divider } from '@ui-kitten/components'
+import { BottomNavigation, BottomNavigationTab, Divider, useTheme } from '@ui-kitten/components'
 import React from 'react'
 import { View } from 'react-native'
 import { ListIcon, AddIcon } from '../../assets/icons'
@@ -12,10 +12,12 @@ import { DetailsNoteScreen } from '../../screens/Notes/DetailsNoteScreen'
 const { Navigator, Screen } = createBottomTabNavigator()
 
 function BottomBar({ navigation, state }) {
+    const theme = useTheme()
     return (
         <View>
             <Divider />
             <BottomNavigation
+                style={{ backgroundColor: theme['background-basic-color-2'] }}
                 appearance='noIndicator'
                 selectedIndex={state.index}
                 onSelect={index => navigation.navigate(state.routeNames[index])}>

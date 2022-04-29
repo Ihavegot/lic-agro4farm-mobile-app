@@ -45,7 +45,7 @@
   "color-danger-800": "#920F2A",
   "color-danger-900": "#780929",
   
-  "text-control-color": "$color-basic-900",
+  "text-control-color": "$color-basic-1000",
   "background-basic-color-1": "$color-basic-1000",
   "background-basic-color-2": "$color-basic-800"
 }
