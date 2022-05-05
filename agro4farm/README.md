@@ -15,6 +15,9 @@
 - [Expo location](https://docs.expo.dev/versions/latest/sdk/location/)
 - [Navigation](https://reactnavigation.org)
 - [UI Kitten](https://akveo.github.io/react-native-ui-kitten/)
+- [Eva desing](https://eva.design)
+- [Async storage](https://github.com/react-native-async-storage/async-storage)
+- [Font awesome](https://fontawesome.com)
 
 #
 
