@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,7 +105,75 @@ File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks18
 \c@AM@survey=\count199
 \AM@templatesizebox=\box51
+) (C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
+Package: polski 2021/08/25 v1.3.6 Polish language package
+
+   Switching to Polish text encoding and Polish maths fonts.
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/base\ot4enc.def
+File: ot4enc.def 2021/04/29 v2.0v Standard LaTeX file
+Now handling font encoding OT4 ...
+... no UTF-8 mapping file for font encoding OT4
 )
+LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 3
+62.
+
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmr.fd
+File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 362.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 362.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 362.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 362.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 362.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 362.
+LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
+(Font)              `operators' in the math version `normal' on input line 362.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 362.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 362.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 362.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 362.
+LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
+(Font)              `operators' in the math version `bold' on input line 362.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 362.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 362.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 362.
+)
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
+)
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 9.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 10.
+
+
 (C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
@@ -114,20 +182,22 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (Lic.aux)
 \openout1 = `Lic.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -170,7 +240,7 @@ PDF version <1.6>, but at most version <1.5> allowed
 <stronatytulowa.pdf, id=1, 597.53635pt x 845.04686pt>
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf>
-Package pdftex.def Info: stronatytulowa.pdf  used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf  used on input line 13.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 
 
@@ -178,7 +248,7 @@ pdfTeX warning: pdflatex.exe (file ./stronatytulowa.pdf): PDF inclusion: found
 PDF version <1.6>, but at most version <1.5> allowed
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf>
-Package pdftex.def Info: stronatytulowa.pdf  used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf  used on input line 13.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 
 
@@ -191,41 +261,85 @@ PDF version <1.6>, but at most version <1.5> allowed
 <stronatytulowa.pdf, id=4, page=1, 597.53635pt x 845.04686pt>
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 13.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 13.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 13.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 13.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 4.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 13.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 [1
 
- <./stronatytulowa.pdf>] [2{C:/Users/ihave/AppData/Local/MiKTeX/fonts/map/pdfte
-x/pdftex.map}] (Lic.aux) ) 
+ <./stronatytulowa.pdf>] (Lic.toc
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 3
+.
+
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/polski\omlplm.fd
+File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
+3.
+
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/polski\omsplsy.fd
+File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
+3.
+
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/polski\omxplex.fd
+File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `Lic.toc'.
+
+
+[2
+
+{C:/Users/ihave/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [3
+
+]
+Rozdzia\PlPrIeC {\l } 1.
+[4
+
+] [5]
+Rozdzia\PlPrIeC {\l } 2.
+[6
+
+] [7] (Lic.aux) ) 
 Here is how much of TeX's memory you used:
- 2708 strings out of 478582
- 43725 string characters out of 2844345
- 335922 words of memory out of 3000000
- 20902 multiletter control sequences out of 15000+600000
- 469909 words of font info for 30 fonts, out of 8000000 for 9000
+ 3160 strings out of 478582
+ 50560 string characters out of 2844345
+ 345738 words of memory out of 3000000
+ 21316 multiletter control sequences out of 15000+600000
+ 477245 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,76p,238b,420s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb>
-Output written on Lic.pdf (2 pages, 78120 bytes).
+ 70i,17n,76p,736b,428s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+pl/plrm.enc}<C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
+/plbx12.pfb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
+/plr10.pfb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/
+plr12.pfb>
+Output written on Lic.pdf (7 pages, 105491 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

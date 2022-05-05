@@ -1,7 +1,51 @@
 \documentclass[a4paper,12pt,oneside]{book}
 \usepackage{pdfpages}
+\usepackage{polski}
+\usepackage{fancyhdr}
+\linespread{1.25}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\footnotesize\rightmark}
+\fancyhead[RE]{\footnotesize\leftmark}
+\fancyhead[LE,RO]{\footnotesize\thepage}
 \begin{document}
+	\thispagestyle{empty}
 	\includepdf{stronatytulowa}
+	
 	\newpage
-	Test
+	\thispagestyle{empty} %usuń styl (fancyheader)
+	\tableofcontents %spis tresci
+	
+	\newpage
+	\thispagestyle{empty}
+	\chapter*{Wstęp} %bez numeru
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	\addcontentsline{toc}{chapter}{Wstęp}
+	
+	\newpage
+	\thispagestyle{empty}
+	\chapter{Piewrwszy}
+	\section{sekcja}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	\newpage
+	\thispagestyle{empty}
+	\chapter{Drugi}
+	\section{sekcja 1}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	
+	\newpage
+	\section{sekcja 2}
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	\subsection{subsekcja}
+	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
 \end{document}
