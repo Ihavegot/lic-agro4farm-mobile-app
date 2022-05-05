@@ -4,10 +4,11 @@ import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { DBIcon, HomeIcon, InfoIcon, KalcIcon, NotesIcon, SunIcon, WorkIcon } from '../../assets/icons'
 import { AboutScreen } from "../../screens/AboutScreen"
-import { CalculatorScreen } from "../../screens/CalculatorScreen"
+import { CalculatorScreen } from "../../screens/Calculator/CalculatorScreen"
 import { TestScreen } from '../../screens/TestScreen'
 import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
 import { BottomTabsNav } from './BottomTabsNav'
+import {BottomTabsCalc} from './BottomTabsCalc'
 
 
 const { Navigator, Screen } = createDrawerNavigator()
@@ -54,7 +55,7 @@ export function DrawerNav() {
         <Navigator drawerContent={props => <DrawerContent {...props} />}>
             <Screen name="MainScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={WeatherLocationScreen} />
             <Screen name="WeatherScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={WeatherLocationScreen} />
-            <Screen name="CalcScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={CalculatorScreen} />
+            <Screen name="CalcScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={BottomTabsCalc} />
             <Screen name="FetrScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={TestScreen} />
             <Screen name="NotesScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={BottomTabsNav} />
             <Screen name="WorecastScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={TestScreen} />
