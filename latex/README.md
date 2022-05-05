@@ -1,3 +1,3 @@
 # Agro4Farm - Preview
 
-![Preview](stronatytulowa.png)
+![Preview](stronatytulowa.PNG)
