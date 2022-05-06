@@ -4,11 +4,10 @@ import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { DBIcon, HomeIcon, InfoIcon, KalcIcon, NotesIcon, SunIcon, WorkIcon } from '../../assets/icons'
 import { AboutScreen } from "../../screens/AboutScreen"
-import { CalculatorScreen } from "../../screens/Calculator/CalculatorScreen"
 import { TestScreen } from '../../screens/TestScreen'
 import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
+import { BottomTabsCalc } from './BottomTabsCalc'
 import { BottomTabsNav } from './BottomTabsNav'
-import {BottomTabsCalc} from './BottomTabsCalc'
 
 
 const { Navigator, Screen } = createDrawerNavigator()
@@ -18,8 +17,8 @@ function DrawerContent({ navigation, state }) {
         <Layout style={styles.headerContainer}>
             <View style={styles.headerContent}>
                 <Avatar
-                    size='large'
-                    source={require('../../assets/icon.png')}
+                    size='giant'
+                    source={require('../../assets/logo.png')}
                 />
                 <Text
                     style={styles.appName}
