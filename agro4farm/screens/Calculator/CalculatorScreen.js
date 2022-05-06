@@ -1,11 +1,10 @@
-import { Button, Divider, Layout, StyleService, Text, useTheme } from '@ui-kitten/components';
-import React, {useState} from 'react';
-import { View, StyleSheet, TextInput } from 'react-native'
 import { faCalculator } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { Button, Layout, Text, useTheme } from '@ui-kitten/components'
+import React, { useState } from 'react'
+import { StyleSheet, TextInput, View } from 'react-native'
 
-export const CalculatorScreen = () => {
-
+export function CalculatorScreen(){
     const theme = useTheme()
     const styles = StyleSheet.create({
         layout: {
@@ -54,12 +53,11 @@ export const CalculatorScreen = () => {
     }
 
     const checkAndCalculate = () => {
-        !mtz || !obsada || !sk ? setOutput('Podaj wszystko') : calculate()
+        !mtz || !obsada || !sk ? setOutput('Podaj wszystkie dane') : calculate()
     }
 
     return (
         <Layout style={styles.layout}>
-
             <View style={styles.inputs}>
                 <TextInput style={styles.in} value={mtz} onChangeText={setMtz} placeholder='Masa Tysiąca Ziaren  |  sztuka/m2' keyboardType='numeric' />
                 <TextInput style={styles.in} value={obsada} onChangeText={setObsada} placeholder='Obsada  |  g' keyboardType='numeric' />
@@ -69,16 +67,10 @@ export const CalculatorScreen = () => {
                         <FontAwesomeIcon icon={faCalculator} />
                     </Button>
                 </View>
-
                 <View style={styles.output}>
                     <Text category='h1' style={{color: theme['color-primary-500']}}>{output}</Text>
                 </View>
             </View>
-            {/* <Input placeholder='Obsada' keyboardType='numeric'></Input>
-            <Input placeholder='MZT' keyboardType='numeric'></Input>
-            <Input placeholder='Siła kiełkowania' keyboardType='numeric'></Input>
-            <Button>Oblicz</Button> */}
-
         </Layout>
     );
 };

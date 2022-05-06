@@ -1,10 +1,10 @@
-import { Button, Divider, Input, Layout, StyleService, Text, useTheme } from '@ui-kitten/components'
-import React from 'react';
-import { StyleSheet, View, Alert } from 'react-native'
-import { faList, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faCircleInfo, faList } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { Button, Layout, Text, useTheme } from '@ui-kitten/components'
+import React from 'react'
+import { Alert, StyleSheet, View } from 'react-native'
 
-export const InfoScreen = () => {
+export function InfoScreen() {
     const theme = useTheme()
     const styles = StyleSheet.create({
         layout: {
@@ -76,21 +76,7 @@ export const InfoScreen = () => {
                 >
                     <FontAwesomeIcon icon={faCircleInfo} />
                 </Button>
-                {/* <Text>Siła kiełkowania to % nasion, które wykiełkowały w danej próbie. Optymalny czas kiełkowania, w zależności od gatunku, wynosi od 10 do 28 dni.</Text> */}
             </View>
-            {/* <Text category='h4' style={styles.info}>
-                (MTZ x obsada) / siła kiełkowania = ilość wysiewu w kg/ha
-            </Text>
-            <Text style={styles.info}>
-                MTZ - Masa Tysiąca Ziaren ( g )
-            </Text>
-            <Text style={styles.info}>
-                Obsada - liczba roślin na jednostce powierzchni ( szt/m2 )
-            </Text>
-            <Text style={styles.info}>
-                Siła kiełkowania - określona dla nasion kwalifikowanych MINIMUM ( % ).
-            </Text> */}
-
         </Layout>
     );
 };
