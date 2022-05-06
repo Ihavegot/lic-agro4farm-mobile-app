@@ -1,77 +1,11 @@
-import { Layout, Icon, Text, Button, useTheme } from '@ui-kitten/components'
+import { faGaugeHigh, faLocationDot, faTemperatureEmpty } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { Layout, Text, useTheme } from '@ui-kitten/components'
 import * as Location from 'expo-location'
 import React, { useEffect, useState } from 'react'
-import { StyleSheet, View, StatusBar, Platform, Image } from 'react-native'
-import { TempIcon } from '../assets/icons'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faLocationDot, faTemperatureEmpty, faGaugeHigh, faArrowTurnUp, faArrowTurnDown } from '@fortawesome/free-solid-svg-icons'
+import { Image, StyleSheet, View } from 'react-native'
 
 export function WeatherLocationScreen() {
-
-    const [weather, setWeather] = useState(null)
-    const [errorMsg, setErrorMsg] = useState(null)
-
-    const api = {
-        link: "https://api.openweathermap.org/data/2.5/weather?",
-        key: "5eadd4755631169fa5a9ca425ce2f238"
-    }
-
-    useEffect(() => {
-        fetchWeather()
-    }, [])
-
-    async function fetchWeather() {
-        try {
-            // Get Location
-            let { status } = await Location.requestForegroundPermissionsAsync()
-            if (status !== 'granted') {
-                setErrorMsg('Dostęp do lokalizacji jest potrzebny do prawidłowego działania aplikacji')
-                return
-            }
-            const location = await Location.getCurrentPositionAsync()
-            const { latitude, longitude } = location.coords
-
-            // Fetch weather
-            const URL = `${api.link}lat=${latitude}&lon=${longitude}&lang=pl&units=metric&appid=${api.key}`
-
-            const weatherFetch = await fetch(URL)
-            const result = await weatherFetch.json()
-            if (weatherFetch.ok) {
-                setWeather(result)
-            } else {
-                setErrorMsg(result.message)
-            }
-
-        } catch (e) {
-            setErrorMsg(e.message)
-        }
-    }
-
-    const checkClouds = (w) => {
-        if ((w.weather[0].main).toLowerCase() == 'clouds') {
-            if (w.clouds.all > 80) {
-                return dictionary[(w.weather[0].main).toLowerCase()]
-            }
-            return dictionary['fewClouds']
-        }
-        return false
-    }
-
-    const convertUTC = (utc) => {
-        const date = new Date(utc * 1000)
-        return date.toLocaleTimeString()
-    }
-
-    const dictionary = {}
-    dictionary['clear'] = <Image source={require('../assets/weatherIcons/png/clear.png')} style={{ width: 190, height: 190 }} />
-    dictionary['clouds'] = <Image source={require('../assets/weatherIcons/png/clouds.png')} style={{ width: 190, height: 190 }} />
-    dictionary['drizzle'] = <Image source={require('../assets/weatherIcons/png/drizzle.png')} style={{ width: 190, height: 190 }} />
-    dictionary['rain'] = <Image source={require('../assets/weatherIcons/png/rain.png')} style={{ width: 190, height: 190 }} />
-    dictionary['thunderstorm'] = <Image source={require('../assets/weatherIcons/png/thunderstorm.png')} style={{ width: 190, height: 190 }} />
-    dictionary['snow'] = <Image source={require('../assets/weatherIcons/png/snow.png')} style={{ width: 190, height: 190 }} />
-    dictionary['mist'] = <Image source={require('../assets/weatherIcons/png/mist.png')} style={{ width: 190, height: 190 }} />
-    dictionary['fewClouds'] = <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 190, height: 190 }} />
-
     const theme = useTheme()
     const style = StyleSheet.create({
         container: {
@@ -152,9 +86,84 @@ export function WeatherLocationScreen() {
             color: theme['color-primary-500'],
             fontWeight: 'bold',
             fontFamily: 'Roboto',
-        }
-
+        },
+        errorContainer: {
+            flex: 1,
+            alignItems: 'center',
+        },
+        error: {
+            marginVertical: 150,
+            marginHorizontal: 20,
+            color: theme['color-primary-500'],
+        },
+        loadingContainer:{
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
     })
+
+    const [weather, setWeather] = useState(null)
+    const [errorMsg, setErrorMsg] = useState(null)
+    const [isLoading, setIsLoading] = useState(true)
+
+    const api = {
+        link: "https://api.openweathermap.org/data/2.5/weather?",
+        key: "5eadd4755631169fa5a9ca425ce2f238"
+    }
+
+    useEffect(() => {
+        fetchWeather()
+    }, [])
+
+    async function fetchWeather() {
+        try {
+            let { status } = await Location.requestForegroundPermissionsAsync()
+            if (status !== 'granted') {
+                return
+            }
+            const location = await Location.getCurrentPositionAsync()
+            const { latitude, longitude } = location.coords
+
+            const URL = `${api.link}lat=${latitude}&lon=${longitude}&lang=pl&units=metric&appid=${api.key}`
+
+            const weatherFetch = await fetch(URL)
+            const result = await weatherFetch.json()
+            if (weatherFetch.ok) {
+                setWeather(result)
+            } else {
+                setErrorMsg(result.message)
+            }
+
+        } catch (e) {
+            setErrorMsg('Dostęp do lokalizacji jest potrzebny do prawidłowego działania aplikacji')
+        }
+    }
+
+    const checkClouds = (w) => {
+        if ((w.weather[0].main).toLowerCase() == 'clouds') {
+            if (w.clouds.all > 80) {
+                return dictionary[(w.weather[0].main).toLowerCase()]
+            }
+            return dictionary['fewClouds']
+        }
+        return false
+    }
+
+    const convertUTC = (utc) => {
+        const date = new Date(utc * 1000)
+        return date.toLocaleTimeString()
+    }
+
+    const dictionary = {}
+    dictionary['clear'] = <Image source={require('../assets/weatherIcons/png/clear.png')} style={{ width: 190, height: 190 }} />
+    dictionary['clouds'] = <Image source={require('../assets/weatherIcons/png/clouds.png')} style={{ width: 190, height: 190 }} />
+    dictionary['drizzle'] = <Image source={require('../assets/weatherIcons/png/drizzle.png')} style={{ width: 190, height: 190 }} />
+    dictionary['rain'] = <Image source={require('../assets/weatherIcons/png/rain.png')} style={{ width: 190, height: 190 }} />
+    dictionary['thunderstorm'] = <Image source={require('../assets/weatherIcons/png/thunderstorm.png')} style={{ width: 190, height: 190 }} />
+    dictionary['snow'] = <Image source={require('../assets/weatherIcons/png/snow.png')} style={{ width: 190, height: 190 }} />
+    dictionary['mist'] = <Image source={require('../assets/weatherIcons/png/mist.png')} style={{ width: 190, height: 190 }} />
+    dictionary['fewClouds'] = <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 190, height: 190 }} />
 
     if (weather) {
         const { main: { temp, pressure } } = weather
@@ -169,7 +178,6 @@ export function WeatherLocationScreen() {
                         <View style={style.icon}>
                             {
                                 checkClouds(weather) ? checkClouds(weather) : dictionary[(weather.weather[0].main).toLowerCase()]
-                                // <Image source={require('../assets/weatherIcons/png/fewClouds.png')} style={{ width: 190, height: 190 }} />
                             }
                         </View>
                         <View style={{ flex: 1, flexDirection: 'column' }}>
@@ -183,12 +191,10 @@ export function WeatherLocationScreen() {
                             </View>
                         </View>
                     </View>
-
                     <View style={style.location}>
                         <FontAwesomeIcon style={{ color: theme['color-primary-500'] }} icon={faLocationDot} />
                         <Text category='h4' style={style.text}> {name}</Text>
                     </View>
-
                 </View>
                 <View style={style.weatherDescription}>
                     <Text category='h5' style={style.text} >{weather.weather[0].description}</Text>
@@ -208,13 +214,10 @@ export function WeatherLocationScreen() {
             </Layout>
         )
     } else {
-
         return (
-            <View style={style.container}>
-                <Text>
-                    {errorMsg}
-                </Text>
-            </View>
+            <Layout style={style.errorContainer}>
+                <Text category='h5' style={style.error}>{errorMsg}</Text>
+            </Layout>
         )
     }
 
