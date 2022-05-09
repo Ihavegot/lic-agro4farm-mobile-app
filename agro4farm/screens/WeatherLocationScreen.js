@@ -134,7 +134,6 @@ export function WeatherLocationScreen() {
             } else {
                 setErrorMsg(result.message)
             }
-
         } catch (e) {
             setErrorMsg('Dostęp do lokalizacji jest potrzebny do prawidłowego działania aplikacji')
         }
@@ -170,6 +169,7 @@ export function WeatherLocationScreen() {
         const { name } = weather
         const sunriseTime = convertUTC(weather.sys.sunrise)
         const sunsetTime = convertUTC(weather.sys.sunset)
+        // console.log(JSON.stringify(weather))
 
         return (
             <Layout style={style.container}>

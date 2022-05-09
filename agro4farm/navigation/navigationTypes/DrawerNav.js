@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { DBIcon, HomeIcon, InfoIcon, KalcIcon, NotesIcon, SunIcon, WorkIcon } from '../../assets/icons'
 import { AboutScreen } from "../../screens/AboutScreen"
+import { PredictionScreen } from "../../screens/PredictionScreen"
 import { TestScreen } from '../../screens/TestScreen'
 import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
 import { BottomTabsCalc } from './BottomTabsCalc'
@@ -57,7 +58,7 @@ export function DrawerNav() {
             <Screen name="CalcScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={BottomTabsCalc} />
             <Screen name="FetrScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={TestScreen} />
             <Screen name="NotesScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={BottomTabsNav} />
-            <Screen name="WorecastScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={TestScreen} />
+            <Screen name="WorecastScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={PredictionScreen} />
             <Screen name="AboutScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2']} }} component={AboutScreen} />
         </Navigator>
     )

@@ -2,7 +2,7 @@ import { Layout, Text, useTheme } from '@ui-kitten/components'
 import React from 'react'
 import { StyleSheet } from 'react-native'
 
-export const AboutScreen = () => {
+export function AboutScreen(){
     const theme = useTheme()
     const styles = StyleSheet.create({
         layout: {
