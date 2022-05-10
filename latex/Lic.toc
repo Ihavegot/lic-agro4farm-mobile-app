@@ -1,7 +1,22 @@
-\contentsline {chapter}{Wstęp}{5}{}%
-\contentsline {chapter}{\numberline {1}Aplikacje mobilne}{6}{}%
-\contentsline {section}{\numberline {1.1}Historia urządzeń mobilnych}{6}{}%
-\contentsline {chapter}{\numberline {2}Drugi}{7}{}%
-\contentsline {section}{\numberline {2.1}sekcja 1}{7}{}%
-\contentsline {section}{\numberline {2.2}sekcja 2}{8}{}%
-\contentsline {subsection}{\numberline {2.2.1}subsekcja}{8}{}%
+\contentsline {chapter}{Wstęp}{6}{}%
+\contentsline {chapter}{\numberline {1}Urządzenia mobilne}{7}{}%
+\contentsline {section}{\numberline {1.1}Początki urządzeń mobilnych}{7}{}%
+\contentsline {section}{\numberline {1.2}Smartphone}{8}{}%
+\contentsline {section}{\numberline {1.3}Smartphone w dzisiejszych czasach}{9}{}%
+\contentsline {chapter}{\numberline {2}Systemy i aplikacje mobilne}{11}{}%
+\contentsline {section}{\numberline {2.1}Mobilne systemy operacyjne}{11}{}%
+\contentsline {subsection}{\numberline {2.1.1}System IOS}{11}{}%
+\contentsline {subsection}{\numberline {2.1.2}System Android}{12}{}%
+\contentsline {section}{\numberline {2.2}Rozwój aplikacji mobilnych}{13}{}%
+\contentsline {section}{\numberline {2.3}Aplikacje dla rolników}{13}{}%
+\contentsline {chapter}{\numberline {3}Agro4farm - aplikacja dla rolników}{14}{}%
+\contentsline {section}{\numberline {3.1}React native}{14}{}%
+\contentsline {subsection}{\numberline {3.1.1}Expo}{14}{}%
+\contentsline {section}{\numberline {3.2}O aplikacji}{15}{}%
+\contentsline {section}{\numberline {3.3}Funkcjonalności}{15}{}%
+\contentsline {subsection}{\numberline {3.3.1}Pogoda}{15}{}%
+\contentsline {subsection}{\numberline {3.3.2}Notatki}{15}{}%
+\contentsline {subsection}{\numberline {3.3.3}Kalkulator wysiewu zbóż}{16}{}%
+\contentsline {subsection}{\numberline {3.3.4}Baza środków ochrony roślin}{16}{}%
+\contentsline {subsection}{\numberline {3.3.5}Przewidywanie terminów pracy i nawożenia}{16}{}%
+\contentsline {chapter}{\numberline {4}Podsumowanie}{17}{}%
