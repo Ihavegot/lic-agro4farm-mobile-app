@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  10 MAY 2022 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  11 MAY 2022 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -652,17 +652,39 @@ Rozdzia\PlPrIeC {\l } 1.
 [7
 
 ]
-<grafika/steve_jobs_iphone_presentation.png, id=47, 702.625pt x 526.96875pt>
+<grafika/steve_jobs_iphone_presentation.png, id=48, 702.625pt x 526.96875pt>
 File: grafika/steve_jobs_iphone_presentation.png Graphic file (type png)
 <use grafika/steve_jobs_iphone_presentation.png>
 Package pdftex.def Info: grafika/steve_jobs_iphone_presentation.png  used on in
-put line 55.
+put line 59.
 (pdftex.def)             Requested size: 292.5pt x 219.37947pt.
- [8 <./grafika/steve_jobs_iphone_presentation.png>] [9] [10]
-Rozdzia\PlPrIeC {\l } 2.
-[11
+ [8 <./grafika/steve_jobs_iphone_presentation.png>]
+<grafika/iphone11.jpg, id=52, 2006.49625pt x 1244.65pt>
+File: grafika/iphone11.jpg Graphic file (type jpg)
+<use grafika/iphone11.jpg>
+Package pdftex.def Info: grafika/iphone11.jpg  used on input line 79.
+(pdftex.def)             Requested size: 292.5pt x 181.42871pt.
+ [9 <./grafika/iphone11.jpg>] [10]
+<grafika/cbos_wykres.png, id=59, 322.95656pt x 173.14688pt>
+File: grafika/cbos_wykres.png Graphic file (type png)
+<use grafika/cbos_wykres.png>
+Package pdftex.def Info: grafika/cbos_wykres.png  used on input line 105.
+(pdftex.def)             Requested size: 292.5pt x 156.82678pt.
+<grafika/cbos_wykres2.png, id=61, 464.4853pt x 138.5175pt>
+File: grafika/cbos_wykres2.png Graphic file (type png)
+<use grafika/cbos_wykres2.png>
+Package pdftex.def Info: grafika/cbos_wykres2.png  used on input line 113.
+(pdftex.def)             Requested size: 390.0pt x 116.30739pt.
+ [11 <./grafika/cbos_wykres.png> <./grafika/cbos_wykres2.png>]
 
-] [12]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.70187pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.70187pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
+
+[12]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.70187pt, for example:
@@ -672,7 +694,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
 
 [13]
-Rozdzia\PlPrIeC {\l } 3.
+Rozdzia\PlPrIeC {\l } 2.
 [14
 
 ] [15]
@@ -685,26 +707,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
 
 [16]
-Rozdzia\PlPrIeC {\l } 4.
+Rozdzia\PlPrIeC {\l } 3.
 [17
+
+] [18]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.70187pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.70187pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
+
+[19] [20]
+Rozdzia\PlPrIeC {\l } 4.
+[21
 
 ] (Lic.aux) ) 
 Here is how much of TeX's memory you used:
- 13652 strings out of 478582
- 284037 string characters out of 2844345
- 543197 words of memory out of 3000000
- 31586 multiletter control sequences out of 15000+600000
- 477245 words of font info for 47 fonts, out of 8000000 for 9000
+ 13690 strings out of 478582
+ 284968 string characters out of 2844345
+ 541197 words of memory out of 3000000
+ 31619 multiletter control sequences out of 15000+600000
+ 477783 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,94p,1344b,882s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/p
-lrm.enc}<C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plb
-x12.pfb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr
-10.pfb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr1
-2.pfb>
-Output written on Lic.pdf (17 pages, 845069 bytes).
+lrm.enc}{C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.e
+nc}<C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.p
+fb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pf
+b><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb
+><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb
+>
+Output written on Lic.pdf (21 pages, 1100563 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
