@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  11 MAY 2022 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  11 MAY 2022 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,7 +731,7 @@ Here is how much of TeX's memory you used:
  31619 multiletter control sequences out of 15000+600000
  477783 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,94p,1344b,882s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,17n,94p,1331b,882s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/p
 lrm.enc}{C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.e
 nc}<C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.p
@@ -739,7 +739,7 @@ fb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pf
 b><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb
 ><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb
 >
-Output written on Lic.pdf (21 pages, 1100563 bytes).
+Output written on Lic.pdf (21 pages, 1100880 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
