@@ -23,6 +23,7 @@ export function CalculatorScreen(){
             marginHorizontal: 10,
             borderRadius: 20,
             maxHeight: 50,
+            color: theme['color-primary-300']
         },
         output: {
             flex: 1,

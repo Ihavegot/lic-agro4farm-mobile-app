@@ -165,7 +165,7 @@ export function PredictionScreen() {
                         <View style={styles.dayPop}>
                             <Text></Text>
                             <Text style={styles.dayText} category='h6'>Prawdopodobieństwo opadów</Text>
-                            <Text style={styles.dayText} category='h5'>{details[0].pop} %</Text>
+                            <Text style={styles.dayText} category='h5'>{details[0].pop * 100} %</Text>
                         </View>
                     </View>
 
