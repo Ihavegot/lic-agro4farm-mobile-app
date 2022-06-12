@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model sor {
+  id                 Int      @id @default(autoincrement())
+  nazwa              String   @db.VarChar(59)
+  nrzezw             String   @db.VarChar(15)
+  terminzezw         DateTime @db.Date
+  termindosprzedazy  DateTime @db.Date
+  termindostosowania String   @db.VarChar(10)
+  rodzaj             String   @db.VarChar(30)
+  substancja_czynna  String   @db.VarChar(239)
+  uprawa             String?  @db.VarChar(771)
+  agrofag            String?  @db.VarChar(2478)
+  dawka              String?  @db.VarChar(17038)
+  termin             String?  @db.VarChar(2431)
+  nazwa_grupy        String   @db.VarChar(31)
+  maloobszarowe      Int?
+  zastosowanie       String   @db.VarChar(26)
+}

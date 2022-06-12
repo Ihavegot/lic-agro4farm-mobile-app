@@ -135,10 +135,10 @@ export function PredictionScreen() {
         })
 
         const predict = (d) => {
-            if (d.pop >= 0.2 || d.tempDay < 4 || d.tempDay > 25 || d.wind > 15) {
+            if (d.pop >= 0.25 || d.tempDay < 4 || d.tempDay > 25 || d.wind > 15) {
                 return <FontAwesomeIcon size={52} icon={faThumbsDown} color='red' />
             } else {
-                if (d.wind <= 9 && (d.humidity >= 50 && d.humidity <= 75)) {
+                if (d.wind <= 9 && (d.humidity >= 50 && d.humidity <= 80)) {
                     return <FontAwesomeIcon size={52} icon={faThumbsUp} color='lime' />
                 }
                 return <FontAwesomeIcon size={52} icon={faThumbsUp} color='yellow' />
@@ -180,7 +180,8 @@ export function PredictionScreen() {
                                     <Text>Temp: {Math.round(day.tempDay)} °C</Text>
                                     <Text>Wilgotność: {day.humidity} %</Text>
                                     <Text>Wiatr: {day.wind}m/s</Text>
-                                    <Text>Prawd. opadów: {day.pop * 100} %</Text>
+                                    <Text>Prawd. opadów: {Math.round(day.pop * 100)} %</Text>
+                                    <Text>Data: {convertUTC(day.dt)}</Text>
                                 </View>
                             )
                         })}
@@ -191,7 +192,7 @@ export function PredictionScreen() {
     } else {
         return (
             <Layout style={styles.layout}>
-                <Text>a</Text>
+                <Text></Text>
             </Layout>
         )
     }

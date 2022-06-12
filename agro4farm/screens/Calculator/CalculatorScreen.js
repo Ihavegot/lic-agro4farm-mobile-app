@@ -50,7 +50,7 @@ export function CalculatorScreen(){
 
     const calculate = () => {
         let wynik = Math.round((mtz * obsada) / sk)
-        setOutput('Wynik: ' + wynik + 'kg/ha')
+        setOutput(wynik + 'kg/ha')
     }
 
     const checkAndCalculate = () => {
