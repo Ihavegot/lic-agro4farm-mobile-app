@@ -72,7 +72,15 @@ export function PredictionScreen() {
             justifyContent: 'center',
             alignItems: 'center',
         },
-
+        error: {
+            marginVertical: 150,
+            marginHorizontal: 20,
+            color: theme['color-primary-500'],
+        },
+        errorContainer: {
+            flex: 1,
+            alignItems: 'center',
+        },
     })
 
     const [weather, setWeather] = useState(null)
@@ -232,8 +240,8 @@ export function PredictionScreen() {
         )
     } else {
         return (
-            <Layout style={styles.layout}>
-                <Text></Text>
+            <Layout style={styles.errorContainer}>
+                <Text category='h5' style={styles.error}>{errorMsg}</Text>
             </Layout>
         )
     }
