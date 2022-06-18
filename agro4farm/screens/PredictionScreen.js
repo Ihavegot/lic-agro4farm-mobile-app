@@ -1,9 +1,9 @@
-import { Layout, Text, useTheme } from '@ui-kitten/components'
-import { StyleSheet, View, ScrollView } from 'react-native'
+import { Layout, Text, useTheme, Button } from '@ui-kitten/components'
+import { StyleSheet, View, ScrollView, Alert } from 'react-native'
 import * as Location from 'expo-location'
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp, faThumbsDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export function PredictionScreen() {
     const theme = useTheme()
@@ -12,7 +12,7 @@ export function PredictionScreen() {
             flex: 1,
         },
         today: {
-            flex: 5,
+            flex: 4,
             backgroundColor: theme['background-basic-color-2'],
             justifyContent: 'center',
             alignItems: 'center',
@@ -36,32 +36,43 @@ export function PredictionScreen() {
             marginVertical: 25,
             borderRadius: 25,
         },
-        dayPrediction:{
+        dayPrediction: {
             margin: 15,
         },
         dayTemp: {
             flexDirection: 'row',
         },
-        dayRestInfo:{
+        dayRestInfo: {
             justifyContent: 'center',
             alignItems: 'center',
         },
-        dayPop:{
+        dayPop: {
             justifyContent: 'center',
             alignItems: 'center',
         },
-        dayTextTemp:{
+        dayTextTemp: {
             margin: 15,
             color: theme['color-primary-500'],
         },
-        dayText:{
+        dayText: {
             color: theme['color-primary-500'],
         },
-        dayTextDate:{
+        dayTextDate: {
             color: theme['color-primary-500'],
             marginVertical: 5,
             fontWeight: 'bold',
-        },  
+        },
+        button: {
+            marginVertical: 5,
+            borderRadius: 30,
+            height: 60,
+            width: 60,
+        },
+        btn: {
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
+
     })
 
     const [weather, setWeather] = useState(null)
@@ -118,7 +129,7 @@ export function PredictionScreen() {
                     tempDay: day.temp.day,
                     humidity: day.humidity,
                     wind: day.wind_speed,
-                    pop: day.pop, // wypierdoli sie jak snieg pada
+                    pop: day.pop,
                     pv: day.rain,
                 })
             } else {
@@ -171,17 +182,47 @@ export function PredictionScreen() {
 
 
                 </View>
+                <View style={styles.btn}>
+                    <Button style={styles.button} onPress={() => {
+                        let optimal = {}
+                        let first = true
+                        details.forEach(element => {
+                            if(first){
+                                if (element.pop >= 0.25 || element.tempDay < 4 || element.tempDay > 25 || element.wind > 15) {
+                                    first = true
+                                } else {
+                                    if (element.wind <= 9 && (element.humidity >= 50 && element.humidity <= 80)) {
+                                        optimal = element
+                                        first = false
+                                    }
+                                }
+                            }
+                        });
+                        console.log(optimal)
+                        Alert.alert(
+                            'Najbliższy optymalny termin prac',
+                            `${convertUTC(optimal.dt)}`,
+                            [
+                                {
+                                    text: 'Ok',
+                                }
+                            ]
+                        )
+                    }}>
+                        <FontAwesomeIcon icon={faSearch} />
+                    </Button>
+                </View>
                 <View style={styles.week}>
                     <ScrollView horizontal>
                         {details.map((day, key) => {
                             return (
                                 <View key={key} style={styles.singleItem}>
                                     {predict(day)}
-                                    <Text>Temp: {Math.round(day.tempDay)} °C</Text>
-                                    <Text>Wilgotność: {day.humidity} %</Text>
-                                    <Text>Wiatr: {day.wind}m/s</Text>
-                                    <Text>Prawd. opadów: {Math.round(day.pop * 100)} %</Text>
-                                    <Text>Data: {convertUTC(day.dt)}</Text>
+                                    <Text style={styles.dayText}>Temp: {Math.round(day.tempDay)} °C</Text>
+                                    <Text style={styles.dayText}>Wilgotność: {day.humidity} %</Text>
+                                    <Text style={styles.dayText}>Wiatr: {day.wind}m/s</Text>
+                                    <Text style={styles.dayText}>Prawd. opadów: {Math.round(day.pop * 100)} %</Text>
+                                    <Text style={styles.dayText}>Data: {convertUTC(day.dt)}</Text>
                                 </View>
                             )
                         })}
