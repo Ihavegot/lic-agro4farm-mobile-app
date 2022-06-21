@@ -4,6 +4,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { StyleSheet, TextInput, View, ScrollView, Linking } from 'react-native'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { useNavigation } from '@react-navigation/native';
 
 export const TestScreen = () => {
   const theme = useTheme()
@@ -123,6 +124,8 @@ export const TestScreen = () => {
     }
   }
 
+  const navigate = useNavigation()
+
   if (data) {
     return (
       <Layout style={styles.layout}>
@@ -161,9 +164,11 @@ export const TestScreen = () => {
                 return (
                   <View key={key} style={styles.outputBox}>
                     <View style={styles.name}>
-                      <Text onPress={() => {
-                        Linking.openURL(`https://www.google.com/search?q=${index.nazwa}`)
-                      }}>{index.nazwa}</Text>
+                      <Button onPress={() => {
+                        navigate.navigate("BrowserDetails", {
+                          singleAgrofag: index
+                        })
+                      }}>{index.nazwa}</Button>
                     </View>
                     <View style={styles.info}>
                       <View style={styles.substance}>
@@ -221,11 +226,3 @@ export const TestScreen = () => {
       </Layout>
   );
 };
-
-const styles = StyleService.create({
-  layout: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-});

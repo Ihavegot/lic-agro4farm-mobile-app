@@ -10,6 +10,8 @@ import { WeatherLocationScreen } from '../../screens/WeatherLocationScreen'
 import { BottomTabsCalc } from './BottomTabsCalc'
 import { BottomTabsNav } from './BottomTabsNav'
 import { MainScreen } from '../../screens/MainScreen'
+import { DetailsBrowserScreen } from "../../screens/DetailsBrowserScreen"
+import { BottomTabsDetails } from "./BottomTabsDetails"
 
 
 const { Navigator, Screen } = createDrawerNavigator()
@@ -57,10 +59,11 @@ export function DrawerNav() {
             <Screen name="MainScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={MainScreen} />
             <Screen name="WeatherScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={WeatherLocationScreen} />
             <Screen name="CalcScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={BottomTabsCalc} />
-            <Screen name="FetrScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={TestScreen} />
+            <Screen name="FetrScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={BottomTabsDetails} />
             <Screen name="NotesScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={BottomTabsNav} />
             <Screen name="WorecastScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={PredictionScreen} />
             <Screen name="AboutScreen" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={AboutScreen} />
+            <Screen name="DetailsBrowser" options={{ title: '', headerStyle: { backgroundColor: theme['background-basic-color-2'] } }} component={DetailsBrowserScreen} />
         </Navigator>
     )
 }

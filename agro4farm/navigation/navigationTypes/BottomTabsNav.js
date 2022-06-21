@@ -3,8 +3,6 @@ import { BottomNavigation, BottomNavigationTab, Divider, useTheme } from '@ui-ki
 import React from 'react'
 import { View } from 'react-native'
 import { ListIcon, AddIcon } from '../../assets/icons'
-import { BTTestA } from '../../screens/BTTestA'
-import { BTTestB } from '../../screens/BTTestB'
 import { NotesScreen } from '../../screens/Notes/NotesScreen'
 import { CreateNoteScreen } from '../../screens/Notes/CreateNoteScreen'
 import { DetailsNoteScreen } from '../../screens/Notes/DetailsNoteScreen'

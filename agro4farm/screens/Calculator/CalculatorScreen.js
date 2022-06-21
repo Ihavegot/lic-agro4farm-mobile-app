@@ -56,6 +56,73 @@ export function CalculatorScreen(){
     const checkAndCalculate = () => {
         !mtz || !obsada || !sk ? setOutput('Podaj wszystkie dane') : calculate()
     }
+//Rzepak: 2,5-3,5 g\n\nKukurydza: 200-400 g\n\nBobik: 350-500 g\n\nGroch siewny: 150-300 g\n\nŁubin żółty: 120-160 g\n\nGryka: 16-24 g\n\nLen: 3-5 g\n\nSezam: 3,3 g\n\nMak: 0,4-0,6 g`,
+    const options = [
+        {
+            label: 'Pszenżyto ozime',
+            value: 45,
+        },
+        {
+            label: 'Żyto',
+            value: 35,
+        },
+        {
+            label: 'Pszenica ozima',
+            value: 45,
+        },
+        {
+            label: 'Pszenica jara',
+            value: 44,
+        },
+        {
+            label: 'Jęczmień ozimy',
+            value: 45,
+        },
+        {
+            label: 'Jęczmień jary',
+            value: 48,
+        },
+        {
+            label: 'Owies',
+            value: 35,
+        },
+        {
+            label: 'Rzepak',
+            value: 3.5,
+        },
+        {
+            label: 'Kukurydza',
+            value: 400,
+        },
+        {
+            label: 'Bobik',
+            value: 500,
+        },
+        {
+            label: 'Groch siewny',
+            value: 300,
+        },
+        {
+            label: 'Łubin żółty',
+            value: 160,
+        },
+        {
+            label: 'Gryka',
+            value: 24,
+        },
+        {
+            label: 'Len',
+            value: 5,
+        },
+        {
+            label: 'Sezam',
+            value: 3.3,
+        },
+        {
+            label: 'Mak',
+            value: 0.6,
+        },
+    ]
 
     return (
         <Layout style={styles.layout}>

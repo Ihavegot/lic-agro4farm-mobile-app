@@ -67,7 +67,7 @@ export function CreateNoteScreen() {
         await AsyncStorageLib.setItem("NOTES", JSON.stringify(n)).then(() => navigation.navigate("List"))
         setNote("")
     }
-    //TODO: REMODEL TEXTAREA AND FIX BUTTON HIDING !!!
+
     return (
         <Layout style={styles.container}>
             <View style={styles.textAreas}>
