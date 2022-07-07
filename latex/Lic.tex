@@ -4,6 +4,7 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{pgf-pie}
+\usepackage{float}
 
 \linespread{1.25}
 \pagestyle{fancy}
@@ -114,6 +115,8 @@
 		\caption{Procent wyboru klasycznych telefonów komórkowych i smartfonów w różnych przedziałach wiekowych}
 	\end{figure}
 
+	\newpage
+
 	Powyższa tabela pokazuje preferencje wyboru telefonów wśród użytkowników względem ich wieku. Dla osób w wieku od 18 do 24 lat najbardziej popularne są smartfony. Liczba ta z każdą kategorią wiekową maleje. Dzieje się tak dlatego, że młodsze społeczeństwo jest bardziej przyswojone do zmian i nowości technologicznych, w przeciwieństwie do starszego społeczeństwa.
 	
 	\section{Smartfony i inne technologie używanie w rolnictwie}
@@ -135,14 +138,43 @@
 	Sama nazwa "system operacyjny" kojarzona jest głównie z komputerami osobistymi. Systemy mobilne mimo tego, że w pewnym stopniu bazują na systemach operacyjnych używanych w komputerach osobistych to posiadają szereg różnic i usprawnień stworzonych głównie w celu ułatwienia użytkownikowi w posługiwaniu się urządzeniem. Szybki rozwój urządzeń mobilnych przyczynił się do stworzenia systemów takich jak Symbian, Windows Phone, BlackBerry OS, iOS czy Android, z których to właśnie te dwa ostatnie czyli iOS oraz Android są liderami używanymi w dzisiejszych czasach.
 	
 	\subsection{System iOS}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
-	
-	\subsection{System Android}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	System iOS jest systemem stworzonym oraz w dalszym ciągu rozwijanym przez firmę Apple dostępnym tylko na urządzeniach tej firmy. Początkowo nazywany iPhone OS, system ten po raz pierwszy został zaprezentowany w roku 2007 przez Steava Jobsa podczas prezentacji pierwszego iPhone. System iOS bazuje na architekturze systemu Mac OS X, a ich struktura składa się z czterech abstrakcyjnych warstw.
 	
 	\newpage
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.85\textwidth]{grafika/warstwy_ios.png}
+		\caption{Warstwy systemu iOS}
+	\end{figure}
+
+	Pierwsza warstwa, czyli "Cocoa Touch" jest biblioteką odpowiedzialną za interfejs użytkownika. Interfejs ten jest sterowany za pomocą wbudowanego ekranu dotykowego. Warstwa "Media" jest warstwą obsługującą dźwięk i obraz. W skład tej warstwy wchodzą biblioteki takie jak: OpenGLES, Quartz, Core Graphics, Core Audio, Open AL oraz Media Player. Kolejną warstwą wchodzącą w skład systemu iOS jest warstwa "Core Services". Odpowiada ona za zarządzanie aplikacjami oraz wątkami. Posiada także funkcje obsługujące sieć i bazy danych. Ostatnią z warstw jest warstwa "Core OS", która ma za zadanie zapewnienia komunikacji między urządzeniem, a oprogramowaniem. Z biegiem lat powstawały nowe wersje systemu, które posiadały szereg udogodnień oraz poprawek. Obecnie istnieje szesnaście wersji systemu iOS. 
+	
+	\subsection{System Android}
+	W roku 2005 po przejęciu przez firmę Google firmy Android Inc, stworzony został system na urządzenia mobilne oparty na jądrze Linuxa o nazwie Android. Prototypy urządzeń wraz z systemem zostały zaprezentowane w 2008 roku na Mobile World Congres. Od tamtej pory rozwój systemu Android przyśpieszył, aby następnie w 2013 roku zostać ogłoszonym najpopularniejszym systemem mobilnym na świecie.
+	
+	\newpage
+	Schemat systemu Android prezentuje się następująco na rysunku 2.2.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.70\textwidth]{grafika/schemat_android.png}
+		\caption{Schemat systemu Android}
+	\end{figure}
+	
+	System Android cechuje się wieloma zaletami z których najważniejszymi są elastyczność systemu, intuicyjność obsługi, mnogość nakładek systemowych, regularne aktualizacje systemowe oraz możliwość rootowania urządzenia i wrzucenia dowolnego systemu. System ten posiada również kilka wad z których największą z nich jest duża podatność na ataki. Patrząc na dzisiejszy rynek telefonów, system Android jest zdecydowanym liderem pod względem dostępności. W przeciwieństwie do systemu iOS, który jest dostępny wyłącznie na urządzeniach firmy Apple, Android jest systemem dostępnym na urządzeniach wielu różnych producentów.
+	
 	\section{Rozwój aplikacji mobilnych}
-	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	Aplikacje mobilne to rodzaj oprogramowania tworzonego z myślą o urządzeniach mobilnych. W ciągu ostatnich lat aplikacje te ewoluowały wraz z dostępnymi na rynku urządzeniami. Wprowadzanie przez producentów nowych funkcjonalności do swoich urządzeń dawało deweloperom aplikacji na smartfony coraz to większe możliwości. Aplikacje mobilne podzielić można na podstawie ich zastosowania oraz grupy osób dla której zostały one stworzone. Zdecydowanie najpopularniejszymi typami aplikacji mobilnych są aplikacje społecznościowe.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{grafika/most_popular_apps_2021.png}
+		\caption{Lista najpopularniejszych aplikacji mobilnych w 2021 roku pod względem ilości pobrań}
+	\end{figure}
+
+	Jak widać na załączonym rysunku 2.3 w pierwszej dziesiątce, aż osiem pozycji to aplikacje społecznościowe. 
+	
 	\section{Aplikacje dla rolników}
 	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
 	

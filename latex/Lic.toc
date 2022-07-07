@@ -8,20 +8,20 @@
 \contentsline {section}{\numberline {2.1}Mobilne systemy operacyjne}{14}{}%
 \contentsline {subsection}{\numberline {2.1.1}System iOS}{14}{}%
 \contentsline {subsection}{\numberline {2.1.2}System Android}{15}{}%
-\contentsline {section}{\numberline {2.2}Rozwój aplikacji mobilnych}{16}{}%
-\contentsline {section}{\numberline {2.3}Aplikacje dla rolników}{16}{}%
-\contentsline {chapter}{\numberline {3}Agro4farm - aplikacja dla rolników}{17}{}%
-\contentsline {section}{\numberline {3.1}React}{17}{}%
-\contentsline {section}{\numberline {3.2}React native}{17}{}%
-\contentsline {subsection}{\numberline {3.2.1}Expo}{18}{}%
-\contentsline {section}{\numberline {3.3}O aplikacji}{18}{}%
-\contentsline {section}{\numberline {3.4}Funkcjonalności}{18}{}%
-\contentsline {subsection}{\numberline {3.4.1}Pogoda}{19}{}%
-\contentsline {subsection}{\numberline {3.4.2}Notatki}{19}{}%
-\contentsline {subsection}{\numberline {3.4.3}Kalkulator wysiewu zbóż}{19}{}%
-\contentsline {subsection}{\numberline {3.4.4}Baza środków ochrony roślin}{19}{}%
-\contentsline {subsection}{\numberline {3.4.5}Przewidywanie terminów pracy i nawożenia}{20}{}%
-\contentsline {section}{\numberline {3.5}Optymalizacja aplikacji}{20}{}%
-\contentsline {chapter}{\numberline {4}Podsumowanie}{21}{}%
-\contentsline {section}{\numberline {4.1}Możliwości dalszego rozwoju aplikacji}{21}{}%
-\contentsline {section}{\numberline {4.2}Zakończenie}{21}{}%
+\contentsline {section}{\numberline {2.2}Rozwój aplikacji mobilnych}{17}{}%
+\contentsline {section}{\numberline {2.3}Aplikacje dla rolników}{18}{}%
+\contentsline {chapter}{\numberline {3}Agro4farm - aplikacja dla rolników}{19}{}%
+\contentsline {section}{\numberline {3.1}React}{19}{}%
+\contentsline {section}{\numberline {3.2}React native}{19}{}%
+\contentsline {subsection}{\numberline {3.2.1}Expo}{20}{}%
+\contentsline {section}{\numberline {3.3}O aplikacji}{20}{}%
+\contentsline {section}{\numberline {3.4}Funkcjonalności}{20}{}%
+\contentsline {subsection}{\numberline {3.4.1}Pogoda}{21}{}%
+\contentsline {subsection}{\numberline {3.4.2}Notatki}{21}{}%
+\contentsline {subsection}{\numberline {3.4.3}Kalkulator wysiewu zbóż}{21}{}%
+\contentsline {subsection}{\numberline {3.4.4}Baza środków ochrony roślin}{21}{}%
+\contentsline {subsection}{\numberline {3.4.5}Przewidywanie terminów pracy i nawożenia}{22}{}%
+\contentsline {section}{\numberline {3.5}Optymalizacja aplikacji}{22}{}%
+\contentsline {chapter}{\numberline {4}Podsumowanie}{23}{}%
+\contentsline {section}{\numberline {4.1}Możliwości dalszego rozwoju aplikacji}{23}{}%
+\contentsline {section}{\numberline {4.2}Zakończenie}{23}{}%
