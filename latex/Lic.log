@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  7 JUL 2022 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  8 JUL 2022 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -491,53 +491,77 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks32
 \@floatcapt=\box64
 )
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen199
+\captionmargin=\dimen256
+\caption@leftmargin=\dimen257
+\caption@rightmargin=\dimen258
+\caption@width=\dimen259
+\caption@indent=\dimen260
+\caption@parindent=\dimen261
+\caption@hangindent=\dimen262
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count291
+\c@continuedfloat=\count292
+Package caption Info: float package is loaded.
+)
+(C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+\c@subfigure=\count293
+\c@subtable=\count294
+)
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 13.
+less on input line 15.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 14.
+less on input line 16.
 
 
 (C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count291
+\l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box65
 ) (Lic.aux)
 \openout1 = `Lic.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 (C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen199
+\scratchcounter=\count296
+\scratchdimen=\dimen263
 \scratchbox=\box66
-\nofMPsegments=\count293
-\nofMParguments=\count294
+\nofMPsegments=\count297
+\nofMParguments=\count298
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen256
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen264
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
 \everyMPtoPDFconversion=\toks34
 )
 (C:\Users\ihave\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -560,13 +584,16 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 
 pdfTeX warning: pdflatex.exe (file ./stronatytulowa.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
 <stronatytulowa.pdf, id=4, 597.53635pt x 845.04686pt>
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf>
-Package pdftex.def Info: stronatytulowa.pdf  used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf  used on input line 19.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 
 
@@ -574,7 +601,7 @@ pdfTeX warning: pdflatex.exe (file ./stronatytulowa.pdf): PDF inclusion: found
 PDF version <1.6>, but at most version <1.5> allowed
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf>
-Package pdftex.def Info: stronatytulowa.pdf  used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf  used on input line 19.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 
 
@@ -587,23 +614,23 @@ PDF version <1.6>, but at most version <1.5> allowed
 <stronatytulowa.pdf, id=7, page=1, 597.53635pt x 845.04686pt>
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 19.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 19.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 19.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 19.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: stronatytulowa.pdf Graphic file (type pdf)
 <use stronatytulowa.pdf, page 1>
-Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 17.
+Package pdftex.def Info: stronatytulowa.pdf , page1 used on input line 19.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 [1
 
@@ -663,24 +690,24 @@ Rozdzia\PlPrIeC {\l } 1.
 File: grafika/steve_jobs_iphone_presentation.png Graphic file (type png)
 <use grafika/steve_jobs_iphone_presentation.png>
 Package pdftex.def Info: grafika/steve_jobs_iphone_presentation.png  used on in
-put line 60.
+put line 62.
 (pdftex.def)             Requested size: 292.5pt x 219.37947pt.
  [8 <./grafika/steve_jobs_iphone_presentation.png>]
 <grafika/iphone11.jpg, id=52, 2006.49625pt x 1244.65pt>
 File: grafika/iphone11.jpg Graphic file (type jpg)
 <use grafika/iphone11.jpg>
-Package pdftex.def Info: grafika/iphone11.jpg  used on input line 80.
+Package pdftex.def Info: grafika/iphone11.jpg  used on input line 82.
 (pdftex.def)             Requested size: 292.5pt x 181.42871pt.
  [9 <./grafika/iphone11.jpg>] [10]
 <grafika/cbos_wykres.png, id=59, 322.95656pt x 173.14688pt>
 File: grafika/cbos_wykres.png Graphic file (type png)
 <use grafika/cbos_wykres.png>
-Package pdftex.def Info: grafika/cbos_wykres.png  used on input line 106.
+Package pdftex.def Info: grafika/cbos_wykres.png  used on input line 108.
 (pdftex.def)             Requested size: 292.5pt x 156.82678pt.
 <grafika/cbos_wykres2.png, id=61, 464.4853pt x 138.5175pt>
 File: grafika/cbos_wykres2.png Graphic file (type png)
 <use grafika/cbos_wykres2.png>
-Package pdftex.def Info: grafika/cbos_wykres2.png  used on input line 114.
+Package pdftex.def Info: grafika/cbos_wykres2.png  used on input line 116.
 (pdftex.def)             Requested size: 390.0pt x 116.30739pt.
  [11 <./grafika/cbos_wykres.png> <./grafika/cbos_wykres2.png>]
 
@@ -708,21 +735,21 @@ Rozdzia\PlPrIeC {\l } 2.
 <grafika/warstwy_ios.png, id=77, 686.565pt x 366.36874pt>
 File: grafika/warstwy_ios.png Graphic file (type png)
 <use grafika/warstwy_ios.png>
-Package pdftex.def Info: grafika/warstwy_ios.png  used on input line 147.
+Package pdftex.def Info: grafika/warstwy_ios.png  used on input line 149.
 (pdftex.def)             Requested size: 331.50238pt x 176.89479pt.
  [15 <./grafika/warstwy_ios.png>]
 <grafika/schemat_android.png, id=81, 371.88937pt x 551.05875pt>
 File: grafika/schemat_android.png Graphic file (type png)
 <use grafika/schemat_android.png>
-Package pdftex.def Info: grafika/schemat_android.png  used on input line 161.
+Package pdftex.def Info: grafika/schemat_android.png  used on input line 163.
 (pdftex.def)             Requested size: 272.99881pt x 404.5314pt.
  [16 <./grafika/schemat_android.png>]
 <grafika/most_popular_apps_2021.png, id=86, 553.31718pt x 317.68687pt>
 File: grafika/most_popular_apps_2021.png Graphic file (type png)
 <use grafika/most_popular_apps_2021.png>
 Package pdftex.def Info: grafika/most_popular_apps_2021.png  used on input line
- 172.
-(pdftex.def)             Requested size: 390.0pt x 223.91594pt.
+ 174.
+(pdftex.def)             Requested size: 350.99762pt x 201.52531pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -733,6 +760,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
 
 [17 <./grafika/most_popular_apps_2021.png>]
+<grafika/nawigator_1.jpg, id=91, 1084.05pt x 2348.775pt>
+File: grafika/nawigator_1.jpg Graphic file (type jpg)
+<use grafika/nawigator_1.jpg>
+Package pdftex.def Info: grafika/nawigator_1.jpg  used on input line 193.
+(pdftex.def)             Requested size: 156.0006pt x 338.00114pt.
+<grafika/nawigator_0.jpg, id=92, 1084.05pt x 2348.775pt>
+File: grafika/nawigator_0.jpg Graphic file (type jpg)
+<use grafika/nawigator_0.jpg>
+Package pdftex.def Info: grafika/nawigator_0.jpg  used on input line 198.
+(pdftex.def)             Requested size: 156.0006pt x 338.00114pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.70187pt, for example:
@@ -742,10 +780,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
 
 [18]
-Rozdzia\PlPrIeC {\l } 3.
-[19
+<grafika/calc_0.jpg, id=96, 1084.05pt x 2348.775pt>
+File: grafika/calc_0.jpg Graphic file (type jpg)
+<use grafika/calc_0.jpg>
+Package pdftex.def Info: grafika/calc_0.jpg  used on input line 210.
+(pdftex.def)             Requested size: 156.0006pt x 338.00114pt.
+<grafika/calc_1.jpg, id=97, 1084.05pt x 2348.775pt>
+File: grafika/calc_1.jpg Graphic file (type jpg)
+<use grafika/calc_1.jpg>
+Package pdftex.def Info: grafika/calc_1.jpg  used on input line 215.
+(pdftex.def)             Requested size: 156.0006pt x 338.00114pt.
 
-] [20]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.70187pt, for example:
@@ -754,19 +799,61 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
 
-[21] [22]
+[19 <./grafika/nawigator_1.jpg> <./grafika/nawigator_0.jpg>]
+<grafika/db_0.jpg, id=102, 1084.05pt x 2348.775pt>
+File: grafika/db_0.jpg Graphic file (type jpg)
+<use grafika/db_0.jpg>
+Package pdftex.def Info: grafika/db_0.jpg  used on input line 227.
+(pdftex.def)             Requested size: 156.0006pt x 338.00114pt.
+<grafika/db_2.jpg, id=103, 1084.05pt x 2348.775pt>
+File: grafika/db_2.jpg Graphic file (type jpg)
+<use grafika/db_2.jpg>
+Package pdftex.def Info: grafika/db_2.jpg  used on input line 232.
+(pdftex.def)             Requested size: 156.0006pt x 338.00114pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.70187pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.70187pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
+
+[20 <./grafika/calc_0.jpg> <./grafika/calc_1.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.70187pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.70187pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
+
+[21 <./grafika/db_0.jpg> <./grafika/db_2.jpg>]
+Rozdzia\PlPrIeC {\l } 3.
+[22
+
+] [23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.70187pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.70187pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
+
+[24] [25]
 Rozdzia\PlPrIeC {\l } 4.
-[23
+[26
 
 ] (Lic.aux) ) 
 Here is how much of TeX's memory you used:
- 13783 strings out of 478582
- 286850 string characters out of 2844345
- 543572 words of memory out of 3000000
- 31705 multiletter control sequences out of 15000+600000
- 477783 words of font info for 48 fonts, out of 8000000 for 9000
+ 15246 strings out of 478582
+ 315607 string characters out of 2844345
+ 567793 words of memory out of 3000000
+ 33154 multiletter control sequences out of 15000+600000
+ 478279 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,94p,1331b,886s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,17n,94p,1331b,907s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/p
 lrm.enc}{C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.e
 nc}<C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.p
@@ -774,9 +861,9 @@ fb><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pf
 b><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb
 ><C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb
 >
-Output written on Lic.pdf (23 pages, 1197038 bytes).
+Output written on Lic.pdf (26 pages, 3847057 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

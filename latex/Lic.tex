@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \usepackage{pgf-pie}
 \usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \linespread{1.25}
 \pagestyle{fancy}
@@ -165,21 +167,81 @@
 	System Android cechuje się wieloma zaletami z których najważniejszymi są elastyczność systemu, intuicyjność obsługi, mnogość nakładek systemowych, regularne aktualizacje systemowe oraz możliwość rootowania urządzenia i wrzucenia dowolnego systemu. System ten posiada również kilka wad z których największą z nich jest duża podatność na ataki. Patrząc na dzisiejszy rynek telefonów, system Android jest zdecydowanym liderem pod względem dostępności. W przeciwieństwie do systemu iOS, który jest dostępny wyłącznie na urządzeniach firmy Apple, Android jest systemem dostępnym na urządzeniach wielu różnych producentów.
 	
 	\section{Rozwój aplikacji mobilnych}
-	Aplikacje mobilne to rodzaj oprogramowania tworzonego z myślą o urządzeniach mobilnych. W ciągu ostatnich lat aplikacje te ewoluowały wraz z dostępnymi na rynku urządzeniami. Wprowadzanie przez producentów nowych funkcjonalności do swoich urządzeń dawało deweloperom aplikacji na smartfony coraz to większe możliwości. Aplikacje mobilne podzielić można na podstawie ich zastosowania oraz grupy osób dla której zostały one stworzone. Zdecydowanie najpopularniejszymi typami aplikacji mobilnych są aplikacje społecznościowe.
+	Aplikacje mobilne to rodzaj oprogramowania tworzonego z myślą o urządzeniach mobilnych. Aplikacje te podzielić można na podstawie ich zastosowania oraz grupy osób dla której zostały one stworzone. Zdecydowanie najpopularniejszymi typami aplikacji mobilnych są aplikacje społecznościowe.
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{grafika/most_popular_apps_2021.png}
+		\includegraphics[width=0.9\textwidth]{grafika/most_popular_apps_2021.png}
 		\caption{Lista najpopularniejszych aplikacji mobilnych w 2021 roku pod względem ilości pobrań}
 	\end{figure}
 
-	Jak widać na załączonym rysunku 2.3 w pierwszej dziesiątce, aż osiem pozycji to aplikacje społecznościowe. 
+	Jak widać na załączonym rysunku 2.3 w pierwszej dziesiątce, aż osiem pozycji to aplikacje społecznościowe.  W ciągu ostatnich lat oprogramowanie mobilne ewoluowało wraz z dostępnymi na rynku urządzeniami. Wprowadzanie przez producentów nowych funkcjonalności do swoich urządzeń dawało deweloperom aplikacji na smartfony coraz większe możliwości. 
+	
+	\newpage
+	
+	Oprócz zmian na rynku aplikacji oraz urządzeń mobilnych z biegiem lat można było zauważyć powstawanie nowych środowisk skierowanych dla programistów aplikacji mobilnych. Do tych najpopularniejszych możemy zaliczyć: Flutter, Ionic, VueJS, Mobile Angular UI, Xamarin, jQuery Mobile, NativeScript, React Native. Używają one różnych języków programowania takich jak C/C++ w przypadku Flutter, JavaScript dla React Native, VueJS i jQuery Mobile, czy C-sharp w Xamarin. Większość tych frameworków wspiera wieloplatformowość, gdzie aplikacje pisane są głównie z myślą o urządzeniach z Androidem oraz iOS.
 	
 	\section{Aplikacje dla rolników}
-	Vivamus ornare, sem sit amet dignissim vestibulum, velit libero congue est, at varius tellus tortor eget libero. Praesent egestas vel est in accumsan. Fusce vehicula sapien auctor, vehicula tellus id, bibendum est. Proin eu metus at sapien porttitor lobortis sit amet pellentesque ex. Ut maximus dui non sagittis ultrices. Duis sem massa, pulvinar vitae vulputate fermentum, vehicula at mauris. Morbi luctus vel quam ut sagittis. Mauris sollicitudin non purus vel dictum. Aenean facilisis eget mi non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer bibendum tellus vitae ex facilisis mollis. Proin iaculis auctor pulvinar. Suspendisse potenti.
+	Celem tej pracy jest przedstawienie aplikacji zaprojektowanej dla rolników, dlatego nie może tu zabraknąć wzmianek o oprogramowaniu oraz rozwiązaniach dostępnych na rynku. W serwisach takich jak "Sklep Play" w łatwy sposób pobrać możemy aplikacje dla rolników które posiadają w sobie funkcje takie jak: menadżer pola, który pozwala użytkownikowi na oznaczanie oraz zapisywanie na mapach swoich pól, aplikacje typu kalkulator, które pozwalają na obliczanie wskaźników wysiewu czy stóp kapitalizacji, aplikacje z wyszukiwarkami chorób i środków ochrony roślin. Funkcje wymienione wyżej są jednymi z najczęściej używanych funkcjonalności w aplikacjach rolniczych.
+	
+	Zdecydowanie najczęściej pojawiającym się typem aplikacji w Sklepie Play, w kategorii "rolnictwo" jest nawigacja dla rolników. Przykładem takiej aplikacji jest "Nawigator polowy". Aplikacja ta pozwala na tworzenie listy posiadanych pól oraz zarządzanie nimi. Przy użyciu map Google użytkownik może znaleźć po swojej aktualnej lokalizacji lub po przez wpisanie adresu miejsce w którym pole może się znajdować. Następnie, tak jak jest to przedstawione na rysunku 2.4, użytkownik jest w stanie zaznaczyć obszar rolny na mapie, nazwać go i określić jaka uprawa się na nim znajduje. Po zapisaniu, pole zostanie dodane do listy wraz z jego opisami oraz powierzchnią. Tam rolnik jest w stanie edytować pole lub użyć opcji do nawigacji po nim.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/nawigator_1.jpg}
+			\caption{Granice pola oznaczone na mapie}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/nawigator_0.jpg}
+			\caption{Zapisywanie informacji o polu}
+		\end{subfigure}
+		\caption{Zrzuty ekranu aplikacji "Nawigator polowy"}
+	\end{figure}
+	
+	Innym przykładem dostępnych aplikacji dla rolników jest kalkulator rolniczy "Calcagro". Sama aplikacja jest dosyć prosta w budowie jak i w obsłudze. W jej skład wchodzą proste kalkulatory obliczające: wagi odliczenia, ubytki na masie po suszeniu, wskaźniki wysiewu oraz stopy kapitalizacji. Interfejs użytkownika prezentuje się następująco (rys 2.5). Jest to kolejna aplikacja, która posiada uproszczony interfejs graficzny oraz jest bardzo prosta w użyciu.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/calc_0.jpg}
+			\caption{Dostępne kalkulatory}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/calc_1.jpg}
+			\caption{Obliczanie ubytku masy po suszeniu}
+		\end{subfigure}
+		\caption{Zrzuty ekranu aplikacji "Calcagro"}
+	\end{figure}
+	
+	Ostatnim przykładem przedstawionym w tej pracy jest aplikacja "Agrobase". Prostym interfejsem graficznym nie różni się od poprzednich aplikacji. Jej główną funkcjonalnością jest wyszukiwarka połączona z bazami danych chorób, szkodników, chwastów oraz środków ochrony roślin. W przypadku tej aplikacji wymagane jest pobranie bazy przy pierwszym użyciu danej funkcji, przy czym plusem jest możliwość wyboru danych dla danego państwa. Niestety aplikacja posiada kilka funkcjonalności tylko dla użytkowników premium. Wygląd aplikacji jest przedstawiony na rys 2.6 .
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/db_0.jpg}
+			\caption{Ekran główny}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/db_2.jpg}
+			\caption{Lista produktów}
+		\end{subfigure}
+		\caption{Zrzuty ekranu aplikacji "Agrobase"}
+	\end{figure}
+
+	Wymienione wyżej aplikacje posiadają szereg zalet takich jak prosty interfejs oraz intuicyjność użycia. Jeśli chodzi o wady to najbardziej zauważalnymi jest blokowanie niektórych funkcji za dodatkowymi opłatami. Aplikacje te posiadają po jednej głównej funkcjonalności, przez co użytkownik często musi pobierać wiele aplikacji od różnych twórców. Brakuje dla nich rozwiązania, które posiadało by wiele funkcji w jednym miejscu, co by ułatwiło oraz zorganizowało pracę rolnika.
 	
 	\newpage
 	\chapter{Agro4farm - aplikacja dla rolników}
+	
+	\section{O aplikacji}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
 	
 	\section{React}
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
@@ -188,9 +250,6 @@
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
 	
 	\subsection{Expo}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
-	
-	\section{O aplikacji}
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
 	
 	\section{Funkcjonalności}
