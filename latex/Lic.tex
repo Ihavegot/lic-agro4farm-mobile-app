@@ -7,6 +7,41 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage[intlimits]{amsmath}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, let, if, in, while, do, else, case, break, const},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+\lstset{
+	language=JavaScript,
+	backgroundcolor=\color{white},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
 
 \linespread{1.25}
 \pagestyle{fancy}
@@ -235,45 +270,292 @@
 		\caption{Zrzuty ekranu aplikacji "Agrobase"}
 	\end{figure}
 
-	Wymienione wyżej aplikacje posiadają szereg zalet takich jak prosty interfejs oraz intuicyjność użycia. Jeśli chodzi o wady to najbardziej zauważalnymi jest blokowanie niektórych funkcji za dodatkowymi opłatami. Aplikacje te posiadają po jednej głównej funkcjonalności, przez co użytkownik często musi pobierać wiele aplikacji od różnych twórców. Brakuje dla nich rozwiązania, które posiadało by wiele funkcji w jednym miejscu, co by ułatwiło oraz zorganizowało pracę rolnika.
+	Wymienione wyżej aplikacje posiadają szereg zalet takich jak prosty interfejs oraz intuicyjność użycia. Jeśli chodzi o wady to najbardziej zauważalnymi jest blokowanie niektórych funkcji za dodatkowymi opłatami. Aplikacje te posiadają po jednej głównej funkcjonalności, przez co użytkownik często musi pobierać wiele aplikacji od różnych twórców. Brakuje wśród nich rozwiązań, które posiadały by wiele funkcji w jednej aplikacji, co zdecydowanie ułatwiło oraz zorganizowało by pracę rolnika.
 	
 	\newpage
 	\chapter{Agro4farm - aplikacja dla rolników}
 	
 	\section{O aplikacji}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	W ramach praktyczniej części pracy zaprojektowana oraz zbudowana została mobilna aplikacja "Agro4Farm". Celem jej stworzenia było zorganizowanie oraz ułatwienie pracy dla osób pracujących na roli. Sama aplikacja została napisana w React native w języku JavaScript przy użyciu platformy Expo.
 	
-	\section{React}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	\section{React Native}	
+	React Native jest otwartoźródłowym frameworkiem bazującym na bibliotece React.js do języka JavaScrip. Głównym celem stworzenia tego frameworku było utworzenie wygodnego środowiska dla programistów piszących aplikacje między-platformowe. Oprócz aplikacji na urządzenia mobilne, React Native pozwala tworzyć aplikacje na telewizory typu SmartTV oraz aplikacje wirtualnej rzeczywistości na urządzenia Oculus. Twórcą React Native jest jeden z gigantów rynku globalnego, czyli Meta.Inc dawniej nazywany Facebook. Jego pierwsza wersja wydana została w marcu 2015 roku. React Native jest na bieżąco aktualizowany, a jego kod źródłowy jest dostępny na GitHub.
 	
-	\section{React native}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	\newpage
+	
+	Framework React Native działa na bardzo podobnej zasadzie co React.js. Główną różnicą między nimi jest to, że React Native nie manipuluje DOM poprzez Virtual DOM, a działa w procesie w tle na urządzeniu końcowym, gdzie komunikuje się z platformą natywną. Tworzenie oraz stylizowanie elementów w React Native jest podobne do składni języków HTML i CSS.
+	
+	\begin{lstlisting}[caption=Kod przykłądowej aplikacji "Hello world" w React Native]
+		import { StatusBar } from 'expo-status-bar';
+		import { StyleSheet, Text, View } from 'react-native';
+		
+		export default function App() {
+			return (
+			<View style={styles.container}>
+				<Text style={styles.text}>Hello world example!</Text>
+				<StatusBar style="auto" />
+			</View>
+			);
+		}
+		
+		const styles = StyleSheet.create({
+			container: {
+				flex: 1,
+				backgroundColor: '#0D1317',
+				alignItems: 'center',
+				justifyContent: 'center',
+			},
+			text: {
+				color: '#ffffff'
+			},
+		});
+	\end{lstlisting}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{grafika/hello_world.jpg}
+		\caption{Przykładowa aplikacja mobilna "Hello world!"}
+	\end{figure}
+
+	Tak jak zostało to przedstawione w listingu 3.1, główną częścią aplikacji jest funkcja "App" w której to zwracany jest główny widok. Komponenty takie jak View, Text, StyleSheet czy StatusBar muszą być wcześniej zaimportowane z konkretnych bibliotek. Zauważyć też można, że poszczególne komponenty posiadają swoje atrybuty. W przykładzie można zauważyć użycie atrybutu "style", którego wartości przekazywane są w postaci zmiennej "styles". Efekt końcowy aplikacji widać na załączonym rysunku 3.1.
 	
 	\subsection{Expo}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	Expo to otwarta platforma do tworzenia natywnych aplikacji przy użyciu React Native. Expo pozwala na tworzenie aplikacji mobilnych na urządzenia z systemem Android i iOS oraz na platformy webowe. Narzędzie to stworzono w celu szybkiego rozpoczęcia pracy oraz jej ułatwienia. Po zainstalowaniu odpowiednich narzędzi na urządzeniu, użytkownik poprzez konsole może zainstalować Expo, a następnie stworzyć nowy projekt. Dodatkowo Expo daje możliwość prostego uruchamiania projektów w aplikacji Expo Go, dzięki której użytkownik jest w stanie debugować aplikację oraz korzystać z opcji przeładowanie na gorąco (ang: Hot reload),
 	
 	\section{Funkcjonalności}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla.
+	Aplikacja Agro4Farm składa się z pięciu głównych funkcjonalności. Ideą jej było zebranie najbardziej przydatnych funkcji w jednym miejscu w celu uproszczenia użytkownikowi nawigacji miedzy danymi funkcjami. Tymi funkcjami są:
 	\begin{description}
-		\item[Pogoda] description
-		\item[Notatki] description
-		\item[Kalkulator wysiewu zbóż] description
-		\item[Baza środków ochrony roślin] description
-		\item[Przewidywanie terminów pracy i nawożenia] description
-		\item[?Giełda zbóż] [! jesli zabrakie treści i bedze czas na napisane]
+		\item[Pogoda] - aktualna prognoza pogody.
+		\item[Kalkulator wysiewu zbóż] - prosty kalkulator obliczający wartości wysiewu zbóż wraz z informacjami na temat danych zbóż.
+		\item[Notatki] - funkcja tworzenia oraz zapisywania notatek.
+		\item[Baza środków ochrony roślin] - baza danych z wyszukiwarką chorób, upraw oraz środków ochrony roślin.
+		\item[Przewidywanie terminów pracy i nawożenia] - funkcja przewidująca dogodne terminy pracy na podstawie pogody.
 	\end{description}
 	
+	\newpage
+	
 	\subsection{Pogoda}
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+		Jednym z najważniejszych czynników określającym to czy rolnik jest w stanie wykonywać swoje obowiązki jest pogoda. To właśnie od warunków atmosferycznych takich jak ilość opadów, wilgotność czy siła wiatru zależy czy rolnik będzie w stanie wykonywać swoją pracę. Dlatego właśnie pierwszą funkcją aplikacji jest prognoza pogody. Jest to dosyć prosta funkcjonalność pozwalająca na sprawdzanie aktualnej prognozy pogody. Funkcja ta używa darmowy ogólnodostępny interfejs OpenWeather API, który pozwala na wykonywanie prostych zapytań w celu uzyskania aktualnych informacji pogodowych. Wymieniony wyżej interfejs programowania aplikacji inaczej API (ang: Application Programming Interface) to interfejs pozwalający na komunikację z aplikacjami oraz serwerami. Pozwala on między innymi na uzyskiwanie danych poprzez wysyłanie zapytań. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{grafika/api.png}
+		\caption{Schemat działania interfejsu API}
+	\end{figure}
+
+	Po wykonaniu odpowiedniego zapytania, OpenWeather API zwraca użytkownikowi obiekt w formacie JSON z informacjami o pogodzie. Informacje które z takiego jesteśmy w stanie odczytać to opis pogody, koordynaty lokacji, wiatr, wilgotność, wschód i zachód słońca oraz wiele więcej.
+	
+	\newpage
+	
+	\begin{lstlisting}[caption=Przykładowa odpowiedź z OpenWeather API]
+		{
+			"coord": {
+				"lon": -122.08,
+				"lat": 37.39
+			},
+			"weather": [
+			{
+				"id": 800,
+				"main": "Clear",
+				"description": "clear sky",
+				"icon": "01d"
+			}
+			],
+			"main": {
+				"temp": 282.55,
+				"feels_like": 281.86,
+				"temp_min": 280.37,
+				"temp_max": 284.26,
+				"pressure": 1023,
+				"humidity": 100
+			},
+			"wind": {
+				"speed": 1.5,
+				"deg": 350
+			},
+			"sys": {
+				"type": 1,
+				"id": 5122,
+				"message": 0.0139,
+				"country": "US",
+				"sunrise": 1560343627,
+				"sunset": 1560396563
+			},
+			"timezone": -25200,
+			"id": 420006353,
+			"name": "Mountain View",
+			"cod": 200
+		} 
+	\end{lstlisting}
+
+	Aby otrzymać odpowiedź podobną do odpowiedzi przedstawionej w listingu 3.2 należy najpierw wykonać odpowiednie zapytanie, które może wyglądać następująco (listing 3.3).
+	
+	\begin{lstlisting}[caption=Przykład zapytania do OpenWeather API]
+		const api = {
+			link: "https://api.openweathermap.org/data/2.5/weather?",
+			key: "cba123defg0987qwerte2f238"
+		}
+	
+		async function fetchWeather() {
+			let { status } = await Location.requestForegroundPermissionsAsync()
+			const location = await Location.getCurrentPositionAsync()
+			const { latitude, longitude } = location.coords
+			
+			const URL = `${api.link}lat=${latitude}&lon=${longitude}&lang=pl&units=metric&appid=${api.key}`
+			
+			const weatherFetch = await fetch(URL)
+			const result = await weatherFetch.json()
+			if (weatherFetch.ok) {
+				setWeather(result)
+			} else {
+				setErrorMsg(result.message)
+			}
+		}
+	\end{lstlisting}
+	
+	W powyższym zapytaniu w linijce 6 tworzony jest adres URL zapytania. W nim podawane są współrzędne geograficzne aktualnej lokalizacji, język w jakim dane zostaną zwrócone, typ jednostek oraz klucz API. Klucz API jest unikalny dla twórcy, a jego generowanie jest możliwe na stronie OpenWeather API. Jeśli chodzi o lokalizację, wartości wysokości oraz szerokości geograficznej są pobierane za pomocą funkcji lokalizacji w telefonie. 
+	
+	\newpage
+	
+	W przypadku otrzymania poprawnej odpowiedzi, otrzymane wartości zapisywane są pod określoną zmienną, a w przeciwnym wypadku ustawiana jest odpowiednia wiadomość z błędem. Gotowa funkcjonalność prezentuje się następująco na rysunku 3.3
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.55\textwidth]{grafika/pogoda.jpg}
+		\caption{Widok funkcji "Pogoda"}
+	\end{figure}
 	
 	\subsection{Notatki}
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+		Kolejną możliwością aplikacji Agro4Farm jest tworzenie notatek. Jest to dosyć prosta funkcjonalność, której głównym celem jest przechowywanie najważniejszych dla użytkownika informacji w pamięci telefonu. Funkcja ta do działania wykorzystuje bibliotekę "AsyncStorageLib", czyli asynchroniczny system przetrzymywania danych bazujący na kluczach i ich wartościach. Funkcja przy tworzeniu nowej notatki zapisuje tytuł oraz jej treść, co pozwala później na łatwe wyszukiwanie zapisanych notatek (rys 3.4a). Wszystkie notatki natomiast wyświetlane są za pomocą przewijanej listy (rys 3.4b).
+		
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/notatki_a.jpg}
+			\caption{Dodawanie notatek}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/notatki_b.jpg}
+			\caption{Lista notatek}
+		\end{subfigure}
+		\caption{Zrzuty ekranu funkcji "Notatki"}
+	\end{figure}
+	
+	Prosty interfejs pozwala na łatwe wyszukiwanie i przeglądanie listy notatek. W celu wyświetlenia zapisanych informacji wystarczy kliknąć na wybrany element listy. Użytkownik zostanie wtedy przeniesiony do widoku szczegółowego gdzie będzie mógł czytać lub usuwać wybrane notatki (rys 3.5).
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{grafika/notatki_c.jpg}
+		\caption{Szczegółowy widok notatek}
+	\end{figure}
 	
 	\subsection{Kalkulator wysiewu zbóż}
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+		Trzecią z kolei funkcjonalnością jest kalkulator wysiewu zbóż. Jego głównym celem jest obliczanie masy wysiewu zboża w kilogramach na hektar w celu otrzymania optymalnej ilości, którą rolnik musi zastosować przy zasiewaniu pola. Kalkulator wysiewu oblicza ilość wysiewu zboża za pomocą poniższego wzoru (3.1)
+		
+	\begin{equation}
+		\textrm{\textbf{\textit{Ilość wysiewu}}} = \frac{\textbf{MTZ}*\textbf{Obsada}}{\textrm{\textit{\textbf{Siła kiełkowania}}}}
+	\end{equation}
+	\\
+	\begin{description}
+		\item[MTZ] - masa tysiąca ziaren, określana w gramach
+		\item[Obsada] - jest to ilość roślin na jednostce powierzchni, określana jako sztuka/$ m^{2} $ 
+		\item[Siła kiełkowania] - określona dla nasion kwalifikowanych, określana w \% 
+	\end{description}
 	
-	\subsection{Baza środków ochrony roślin}
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.
+	Funkcja kalkulatora wysiewu składa się z dwóch widoków: widoku kalkulatora oraz widoku z informacjami. Pierwszy widok pozwala użytkownikowi na wprowadzenie oraz obliczenie ilości wysiewu. Funkcja ta zawiera w sobie prostą walidację uniemożliwiającą użytkownikowi wprowadzenia niepoprawnych lub pustych danych. W przypadku poprawnego wpisania wszystkich danych i naciśnięciu przycisku oblicz otrzymamy wynik w kg/ha (rys 3.6a). W przeciwnym wypadku aplikacja poinformuje nas o błędnie wpisanych danych.  Drugi widok natomiast pełni funkcję legendy, która daje informacje o potrzebnych do obliczeniach zmiennych. Dodatkowo dla masy tysiąca ziaren stworzona została lisa gatunków zbóż razem z ich MTZ, a dla siły kiełkowania podany został sposób na określenie tej wartości (rys 3.6b)
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/kal_a.jpg}
+			\caption{Widok kalkulatora}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{grafika/kal_b.jpg}
+			\caption{Widok informacji}
+		\end{subfigure}
+		\caption{Zrzuty ekranu funkcji "Kalkulator wysiewu zbóż"}
+	\end{figure}
+	
+	\subsection{Wyszukiwarka środków ochrony roślin}
+		Przedostatnią już funkcjonalnością w aplikacji Agro4Farm jest wyszukiwarka środków ochrony roślin. Jest to bardziej złożona funkcjonalność składająca się z wyszukiwarki ochrony roślin stworzonej po stronie aplikacji oraz stworzonego na potrzeby aplikacji interfejsu API łączącego się ze spisem środków ochrony roślin. Wyżej wspomniany interfejs programowania aplikacji został stworzony zgodnie z zasadą projektowania REST (ang: representational state transfer).
+		
+		\newpage
+		
+		REST API działa na zasadzie wysyłania żądań HTTP. Dzięki temu możliwe jest wykonywanie podstawowych operacji CRUD (ang: create, read, update, delete) w bazie czyli tworzenie, odczytywanie, zmiana oraz usuwanie danych. W przypadku wysłania zapytania interfejs API zwraca użytkownikowi odpowiednie dane, które zazwyczaj zwracane są w formacie JSON lub XML (rys: 3.7).
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{grafika/restapi.png}
+			\caption{Przykładowy schemat działania REST API}
+		\end{figure}
+	
+		API wyszukiwarki środków ochrony roślin do połączenia się z bazą danych używa PRISMA ORM które automatycznie generuje modele oraz wykonuje migracje. Na potrzeby aplikacji interfejs API zwraca dane w zależności od tego jakiego filtru użytkownik używa. Aplikacja pozwala na wyszukiwanie środków ochrony roślin po nazwie produktu, nazwie choroby lub szkodnika oraz po nazwie uprawy do której ów środek jest stosowany. Dane o konkretnych środkach zwracane są w formacie JSON.
+		
+		\newpage
+		
+		\begin{lstlisting}[caption=Kod API filtru wyszukiwania po nazwie uprawy]
+			import { PrismaClient } from "@prisma/client"
+			import NextCors from 'nextjs-cors'
+			import { NextApiRequest, NextApiResponse } from "next"
+			
+			const prisma = new PrismaClient()
+			
+			export default async function handle(req: NextApiRequest, res: NextApiResponse) {
+				// Wartosc wprowadzona w wyszukiwarce, nazwa uprawy 
+				let {query: {name}} = req
+				
+				await NextCors(req, res, {
+					methods: ['GET'],
+					origin: '*',
+					optionsSuccessStatus: 200,
+				})
+				// Zapytanie do bazy
+				const posts = await prisma.sor.findMany({
+					where: {
+						uprawa: {
+							contains: name as string,
+							mode: 'insensitive'
+						}
+					},
+				})
+				// Wyslanie odpowiedzi
+				res.status(200).json(posts)
+			}
+		\end{lstlisting}
+	
+		Aby skorzystać z opcji wyszukiwania użytkownik musi wpisać frazę którą chcę wyszukać, wybrać odpowiedni filtr i nacisnąć przycisk wyszukiwania. Po otrzymaniu odpowiedzi dane wyświetlane są w postaci listy przesuwanej. Poszczególne elementy zawierają podstawowe informacje o środku ochronnym (rys 3.8a). Po kliknięciu w wybrany element listy zostają wyświetlone szczegółowe informacje o produkcie, gdzie użytkownik ma możliwość wyszukania ofert dla danego produktu lub zapisanie go jako zakupionego (rys 3.8b).
+		
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}{.5\textwidth}
+				\centering
+				\includegraphics[width=0.8\textwidth]{grafika/wysz_a.jpg}
+				\caption{Widok wyszukiwarki}
+			\end{subfigure}%
+			\begin{subfigure}{.5\textwidth}
+				\centering
+				\includegraphics[width=0.8\textwidth]{grafika/wysz_b.jpg}
+				\caption{Widok szczegółów}
+			\end{subfigure}
+			\caption{Zrzuty ekranu funkcji "Wyszukiwarka środków ochrony roślin"}
+		\end{figure}
+	
+		Wyżej wspomniane funkcje, czyli kupno produktu oraz zapisanie informacji o kupnie są kluczowymi funkcjonalnościami tej wyszukiwarki. W aplikacjach rolniczych tego typu brakuje właśnie takich rozwiązań, które z pewnością ułatwiły by pracę oraz zaoszczędziły czas rolnika. Pierwsza funkcja automatycznie przenosi użytkownika do strony gdzie jest w stanie zakupić dany produkt. Druga z nich natomiast wykorzystuje wspomnianą już wcześniej w tej pracy funkcjonalność "notatki". 
+		
+		\newpage
+		
+		Jeżeli użytkownik ma zamiar zakupić dany produkt może za pomocą przycisku zapisać informację o kupnie danego produktu razem z aktualną datą. Funkcja ta jest o tyle przydatna, gdyż coraz częściej w gospodarstwach wymagane jest prowadzenie ewidencji zakupów i sprzedaży.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.55\textwidth]{grafika/wysz_c.jpg}
+			\caption{Notatki po dodaniu informacji o kupnie produktu}
+		\end{figure}
 	
 	\subsection{Przewidywanie terminów pracy i nawożenia}
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque urna. Morbi eu ante id quam pretium ultrices eget a nulla. Nulla lorem mi, laoreet vitae rutrum tempor, venenatis a sem. Donec dignissim ex quis varius commodo. Ut vel diam volutpat nisl convallis venenatis. Quisque tincidunt interdum tellus, eu rhoncus purus rhoncus ut. Cras rhoncus porttitor mollis.

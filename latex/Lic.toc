@@ -12,16 +12,15 @@
 \contentsline {section}{\numberline {2.3}Aplikacje dla rolników}{18}{}%
 \contentsline {chapter}{\numberline {3}Agro4farm - aplikacja dla rolników}{22}{}%
 \contentsline {section}{\numberline {3.1}O aplikacji}{22}{}%
-\contentsline {section}{\numberline {3.2}React}{22}{}%
-\contentsline {section}{\numberline {3.3}React native}{23}{}%
-\contentsline {subsection}{\numberline {3.3.1}Expo}{23}{}%
-\contentsline {section}{\numberline {3.4}Funkcjonalności}{23}{}%
-\contentsline {subsection}{\numberline {3.4.1}Pogoda}{23}{}%
-\contentsline {subsection}{\numberline {3.4.2}Notatki}{24}{}%
-\contentsline {subsection}{\numberline {3.4.3}Kalkulator wysiewu zbóż}{24}{}%
-\contentsline {subsection}{\numberline {3.4.4}Baza środków ochrony roślin}{24}{}%
-\contentsline {subsection}{\numberline {3.4.5}Przewidywanie terminów pracy i nawożenia}{24}{}%
-\contentsline {section}{\numberline {3.5}Optymalizacja aplikacji}{25}{}%
-\contentsline {chapter}{\numberline {4}Podsumowanie}{26}{}%
-\contentsline {section}{\numberline {4.1}Możliwości dalszego rozwoju aplikacji}{26}{}%
-\contentsline {section}{\numberline {4.2}Zakończenie}{26}{}%
+\contentsline {section}{\numberline {3.2}React Native}{22}{}%
+\contentsline {subsection}{\numberline {3.2.1}Expo}{25}{}%
+\contentsline {section}{\numberline {3.3}Funkcjonalności}{25}{}%
+\contentsline {subsection}{\numberline {3.3.1}Pogoda}{26}{}%
+\contentsline {subsection}{\numberline {3.3.2}Notatki}{30}{}%
+\contentsline {subsection}{\numberline {3.3.3}Kalkulator wysiewu zbóż}{32}{}%
+\contentsline {subsection}{\numberline {3.3.4}Wyszukiwarka środków ochrony roślin}{33}{}%
+\contentsline {subsection}{\numberline {3.3.5}Przewidywanie terminów pracy i nawożenia}{38}{}%
+\contentsline {section}{\numberline {3.4}Optymalizacja aplikacji}{38}{}%
+\contentsline {chapter}{\numberline {4}Podsumowanie}{39}{}%
+\contentsline {section}{\numberline {4.1}Możliwości dalszego rozwoju aplikacji}{39}{}%
+\contentsline {section}{\numberline {4.2}Zakończenie}{39}{}%
