@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  14 AUG 2022 15:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.5)  23 AUG 2022 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1176,6 +1176,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [40 <./grafika/pre.jpg>]
 Rozdzia\PlPrIeC {\l } 4.
+
+Overfull \hbox (17.0859pt too wide) in paragraph at lines 612--613
+[]\OT4/cmr/m/n/12 funkcja ta uspraw-ni-ªa-by iden-ty-fi-ka-cj¦ u»yt-
+ []
+
 [41
 
 ]
@@ -1188,38 +1193,54 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.70187pt}.
 
 [42] (Lic.bbl
-Underfull \hbox (badness 5403) in paragraph at lines 42--47
+Underfull \hbox (badness 4647) in paragraph at lines 42--47
 []\OT4/cmr/m/n/12 Counterpoint, ``Glo-bal smart-pho-ne mar-ket sha-re:
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 42--47
+Underfull \hbox (badness 2073) in paragraph at lines 42--47
 \OT4/cmr/m/n/12 By qu-ar-ter,'' \OT4/cmr/m/it/12 Co-un-ter-po-int\OT4/cmr/m/n/1
 2 , 2022. [On-li-ne]. Ava-ila-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--62
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 \OT4/cmr/m/n/12 technologie/artykuly/1064372,aplikacje-mobilne-i-drony-czyli-no
 we-
  []
 
 
-Overfull \hbox (59.10645pt too wide) in paragraph at lines 64--66
-[]\OT4/cmr/m/n/12 ``https://play.google.com/store/apps/details?id=lt.noframe.fa
-rmisfieldnavigator.free
- []
-
-
-Overfull \hbox (25.55402pt too wide) in paragraph at lines 68--70
-[]\OT4/cmr/m/n/12 ``https://play.google.com/store/apps/details?id=lt.farmis.app
-s.agrocalculator
+Underfull \hbox (badness 2772) in paragraph at lines 62--65
+[]\OT4/cmr/m/n/12 ``Wprowadzenie do sys-te-mu ios,'' 2012. [On-li-ne].
  []
 
 [43
 
 ]
-Overfull \hbox (21.0499pt too wide) in paragraph at lines 72--74
+Underfull \hbox (badness 1675) in paragraph at lines 75--78
+[]\OT4/cmr/m/n/12 ``Most po-pu-lar apps 2021,'' 2022. [On-li-ne]. Ava-
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 75--78
+\OT4/cmr/m/n/12 ila-ble: https://www.businessofapps.com/data/most-popular-apps/
+
+ []
+
+
+Overfull \hbox (64.98138pt too wide) in paragraph at lines 80--82
+[]\OT4/cmr/m/n/12 ``https://play.google.com/store/apps/details?id=lt.noframe.fa
+rmisfieldnavigator.free
+ []
+
+
+Overfull \hbox (31.42896pt too wide) in paragraph at lines 84--86
+[]\OT4/cmr/m/n/12 ``https://play.google.com/store/apps/details?id=lt.farmis.app
+s.agrocalculator
+ []
+
+
+Overfull \hbox (26.92484pt too wide) in paragraph at lines 88--90
 []\OT4/cmr/m/n/12 ``https://play.google.com/store/apps/details?id=lt.farmis.app
 s.farmiscatalog
  []
@@ -1247,13 +1268,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [47] (Lic.aux) ) 
 Here is how much of TeX's memory you used:
- 17985 strings out of 478582
- 354278 string characters out of 2844345
- 703552 words of memory out of 3000000
- 35824 multiletter control sequences out of 15000+600000
+ 17991 strings out of 478582
+ 354331 string characters out of 2844345
+ 703572 words of memory out of 3000000
+ 35830 multiletter control sequences out of 15000+600000
  482612 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,94p,1220b,1191s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,17n,94p,1225b,1191s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/p
 l/plms.enc}{C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plr
 m.enc}{C:/Users/ihave/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc
@@ -1269,7 +1290,7 @@ have/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/i
 have/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb><C:/Users/ih
 ave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb><C:/Users/ih
 ave/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt10.pfb>
-Output written on Lic.pdf (47 pages, 6703502 bytes).
+Output written on Lic.pdf (47 pages, 6704428 bytes).
 PDF statistics:
  262 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

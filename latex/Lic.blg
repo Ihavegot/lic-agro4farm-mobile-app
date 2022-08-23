@@ -3,7 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Lic.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: IEEEtran.bst
-Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -17,6 +17,12 @@ Warning--empty author in ref1
 Warning--empty journal in ref4
 Warning--empty author in ref5
 Warning--empty journal in ref5
+Warning--empty author in ref10
+Warning--empty journal in ref10
+Warning--empty author in ref11
+Warning--empty journal in ref11
+Warning--empty author in ref12
+Warning--empty journal in ref12
 Warning--empty author in ref6
 Warning--empty journal in ref6
 Warning--empty year in ref6
@@ -29,47 +35,53 @@ Warning--empty year in ref8
 Warning--empty author in ref9
 Warning--empty journal in ref9
 Warning--empty year in ref9
+Warning--empty author in ref13
+Warning--empty journal in ref13
+Warning--empty year in ref13
+Warning--empty author in ref14
+Warning--empty journal in ref14
+Warning--empty year in ref14
 
 Done.
-You've used 9 entries,
+You've used 14 entries,
             4087 wiz_defined-function locations,
-            853 strings with 8434 characters,
-and the built_in function-call counts, 2988 in all, are:
-= -- 208
-> -- 21
+            869 strings with 9030 characters,
+and the built_in function-call counts, 4379 in all, are:
+= -- 300
+> -- 26
 < -- 4
-+ -- 14
++ -- 19
 - -- 3
-* -- 165
-:= -- 555
-add.period$ -- 18
-call.type$ -- 9
-change.case$ -- 9
+* -- 247
+:= -- 810
+add.period$ -- 28
+call.type$ -- 14
+change.case$ -- 14
 chr.to.int$ -- 9
-cite$ -- 25
-duplicate$ -- 274
-empty$ -- 288
+cite$ -- 42
+duplicate$ -- 412
+empty$ -- 431
 format.name$ -- 3
-if$ -- 625
+if$ -- 915
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 40
-newline$ -- 60
+int.to.str$ -- 14
+missing$ -- 60
+newline$ -- 83
 num.names$ -- 3
-pop$ -- 132
+pop$ -- 207
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 220
+skip$ -- 323
 stack$ -- 0
-substring$ -- 30
-swap$ -- 120
+substring$ -- 35
+swap$ -- 170
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 9
-warning$ -- 16
+type$ -- 14
+warning$ -- 28
 while$ -- 6
-width$ -- 10
-write$ -- 94
-(There were 16 warnings)
+width$ -- 16
+write$ -- 134
+(There were 28 warnings)
